@@ -1,0 +1,134 @@
+#content{width: 100%;background: url(../../common/images/sub_join.png) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed; padding-top: 100px; padding-bottom: 100px;
+    
+  }  
+
+
+    .sub_cont_wrap{
+        background: #f0f0f0;
+        border: 3px solid #00588a;
+        width: 900px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+padding: 60px 30px;
+    }
+    #content .sub_cont_wrap form{
+        margin-bottom: 100px;
+    }
+    #content .logo{
+        width: 150px;
+        height: 54px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 70px;
+        text-indent: -9999px;
+        background: url(../../common/images/us_logo.png) 0 0 no-repeat;
+        position: relative;
+    }
+    #content .logo::after{content: '';  width: 3px; height: 70px; border-radius: 2px; background: #00588a; position: absolute; top: -150px; left: 50%; transform: translateX(-50%); animation: arrowAni 2.2s infinite 0s normal;}
+
+    @keyframes arrowAni{
+        from{top:50px; opacity: 1;}
+        to{top: 100px; opacity: 0;}
+    }
+
+
+
+    #content h3{
+        font-size: 28px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    
+    #content h4{
+        color: #333;
+        font-size: 20px;
+        font-family : 'Nanum Gothic', sans-serif;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        position: relative;
+    }
+    
+    #content .policy{
+        overflow-y: scroll;
+        height: 20px;
+        padding: 30px 20px;
+        background: #fff;
+        border: 1px solid #333;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+    #content .check{
+        margin-bottom: 60px;
+        font-size: 16px;
+        color: #333;
+        font-family : 'Nanum Gothic', sans-serif;
+    }
+    input[type=checkbox] + label{
+        cursor: pointer
+    }
+    input[type=checkbox] + label::before { 
+        display: inline-block; 
+        width: 18px; 
+        height: 18px; 
+        background-color: transparent; 
+        border: 1px solid #333;
+        border-radius: 50%; 
+        content:'';
+        margin: 0px 15px -6px 0px ;
+        transition: all .3s ease-out;
+    } 
+    /* 체크박스 눌렀을 때 */
+    input[type=checkbox]:checked + label::before{
+        background: #6dc7ff;
+        border: 1px solid #6dc7ff;
+    } input[type=checkbox]{
+        display: none;
+    }
+    
+    /* 버튼 */
+    .button a,.button .cancel{
+        width: 250px;
+        float: left;
+        text-align: center;
+        display: inline-block;    
+        margin-right: 10px;
+        border-radius: 10px;
+        color: #fff;
+        padding: 20px 25px;
+        font-size: 16px;
+        font-family : 'Nanum Gothic', sans-serif;
+    }
+    .button .allcheck{
+        margin-left: 12px;
+        background:  #f1871e;
+        color: #333;
+        transition: all .3s ease-out; 
+    }
+    .button .allcheck:hover{
+        background: #00588a;
+        color: #fff;
+    }
+    .button .check_agree{
+        border: 1px solid #fff;
+        background: #00588a;
+        transition: all .3s ease-out; 
+    }
+    .button .check_agree:hover{
+        background: #f1871e;
+    }
+    .button .cancel{
+        display: block;
+        padding: 19px 0;
+        margin-right: 0;
+        border: 1px solid #fff;
+        background: #00588a;
+    }
+    

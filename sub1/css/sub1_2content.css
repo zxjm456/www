@@ -1,0 +1,38 @@
+.sub_menu li.ceo a{display: block; background: #0069ab; color: #eee;}
+.sub_menu li.ceo a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+.sub_menu li.ceo a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.title_area .ceo_overview{}
+.title_area .ceo_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+
+.title_area .ceo_overview li{float: left; width: 100%;}
+.title_area .ceo_overview li a{display: block; color: #333; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative;}
+
+.title_area .ceo_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; background: #333; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; opacity: .8;}
+
+
+#content .title_area .inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .title_area .inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .title_area .inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+/**/
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 100px 0;}
+section#ceo_history{width: 100%; margin: 0 auto; margin-top: 150px; margin-bottom: 150px;}
+#ceo_history .intro_inner{width: 1200px; margin: 0 auto;}
+#ceo_history .intro_inner div{}
+
+
+
+#ceo_history .intro_inner .con_bg{ position: relative; left: -18%; border-radius: 30px;}
+#ceo_history .intro_inner .con_logo{position: relative; left: 42%; transform: rotate(-25deg);}
+#ceo_history .intro_inner p{font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;}
+#ceo_history .intro_inner p span{color: #0069ab;}
+#ceo_history .intro_inner .right{width: 1200px;  margin: 0 auto; position: relative;}
+#ceo_history .intro_inner .right .circle{display: block;  position: absolute; bottom: -700px; right: -152px; width: 900px; height: 900px; border: 1px solid #0069ab; border-radius: 50%; z-index: -1;}
+/**/
+#ceo_history .intro_inner dl{height: 50px;}
+#ceo_history .intro_inner dt{font-size: 0.875em; color: #666; margin: 45px 0 0 260px;}
+#ceo_history .intro_inner dt span{color: #0069ab;}
+#ceo_history .intro_inner dd{font-size: 1.063em; text-align: right; margin-bottom: 15px; color: #666; line-height: 2em; position: relative; top: -590px;}
+#ceo_history .intro_inner dd span{color: rgb(241, 135, 30);;}

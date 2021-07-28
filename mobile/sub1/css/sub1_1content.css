@@ -1,0 +1,172 @@
+
+/*파란불*/
+.sub_menu li.overview a{background: #0069ab; color: #fff;}
+.sub_menu li a{display: block; position: relative; font-size: 16px; color: #888; line-height: 48px;}
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 24px;}
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 24px;}
+/*콘텐츠 슬라이드*/
+.tabs{margin-bottom: -17px; position: relative;}
+.tabs .active{color: #0069ab;}
+.tabs::after{content: ''; width: 100%; height: 1px; background: #0069ab; position: absolute; top:30px;}
+.tabs .tab_inner{overflow: hidden; margin-top: 60px; position: relative;}
+.tabs .tab_inner a{float: left; width: 33.3%;display: block;  font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s}
+.tabs .active::after{content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #0069ab;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    margin-left: -8px; z-index: 5;
+   border-radius: 50%;}
+/*페이지1*/
+.page1{}
+.page1 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; text-align: right; margin-right: 40px; margin-top: 30px;}
+.page1 h3::after{    content: ''; display: block; width: 140px; height: 3px; background: #8fcaca; position: absolute; top: 50px; right: -75px;}
+
+.page1 .intro img{width: 90%; margin:90px 0 auto; border-radius: 0 20px 0 0;}
+.page1 .intro{position: relative;}
+.page1 .intro .intro_txt{background: #fff;width: 90%; position: absolute; top: 80%; right: 0; border-radius: 20px 0 0 0;    box-shadow: 35px 35px 40px rgb(0 0 0 / 40%);}
+
+.page1 .intro .intro_txt dl{padding: 50px 25px 0; font-family:  'Nanum Gothic', sans-serif; text-align: justify;}
+
+.page1 .intro .intro_txt dt{font-size: 20px; font-weight: 800; padding-bottom: 20px;}
+.page1 .intro .intro_txt dt span{color: #0069ab;}
+.page1 .intro .intro_txt dd{font-size: 17px; font-weight: 300; padding-bottom: 30px;}
+
+.page1 .facin{margin-top: 320px; margin-bottom: 60px; position: relative;}
+.page1 .think{position: relative; margin-bottom: 60px;}
+.page1 .facin img{width: 100%;}
+.page1 .think img{width: 100%;}
+
+
+.page1 .facin dl{padding: 50px 20px 0 20px; font-family:  'Nanum Gothic', sans-serif; text-align: justify;}
+.page1 .facin dl dt{font-size: 18px; font-weight: 800;
+    line-height: 1.5;}
+    .page1 .facin dl dt span{color: #0069ab;}
+    .page1 .think dl dt span{color: #0069ab;}
+.page1 .facin dl dd{font-size: 14px;
+    line-height: 1.5; font-weight: 400; color: #666;
+    margin-top: 20px;}
+.page1 .think dl{padding: 50px 20px 0 20px; font-family:  'Nanum Gothic', sans-serif; text-align: justify;}
+.page1 .think dl dt{font-size: 18px; font-weight: 800;
+    line-height: 1.5;}
+.page1 .think dl dd{font-size: 14px;
+    line-height: 1.5; font-weight: 400; color: #666;
+    margin-top: 20px;}
+.page1 marquee{position: absolute;  top: 25%;  right: 0; color: #fff; font-family : 'Arial', sans-serif;  font-weight: 700; font-size: 50px; text-transform: uppercase;}
+
+
+
+
+
+.page1 .company{width: 100%; height: 700px; background: url(../images/sec1_con4.png) no-repeat center bottom; background-size: cover; font-family:  'Nanum Gothic', sans-serif;}
+.page1 .company .com_inner{width: 94%; height: 500px; padding-top: 1px; margin: 0 3%;}
+.page1 .company .com_inner .inner_txt dl{text-align: center; margin-top: 33px;}
+.page1 .company .com_inner .inner_txt dt{font-size: 18px; font-weight: 800;}
+.page1 .company .com_inner .inner_txt dd{font-size: 14px; line-height: 1.5; padding: 40px 20px 0 20px;}
+
+
+
+.page1 .company .com_inner ul{width: 80%; height: 500px; margin: 0 10%; overflow: hidden; padding-top: 45px;}
+.page1 .company .com_inner .inner_gr li{width: 40%; height: 180px; float: left; background: #f0f0f0; margin-left: 10%;}
+.page1 .company .com_inner .inner_gr li:nth-of-type(1){margin-left: 5%; margin-bottom: 50px;}
+.page1 .company .com_inner .inner_gr li:nth-of-type(2){margin-bottom: 50px;}
+.page1 .company .com_inner .inner_gr li:nth-of-type(3){margin-left: 5%;}
+.page1 .company .com_inner .inner_gr li dl{text-align: center; margin-top: 20px;}
+.page1 .company .com_inner .inner_gr li dl p{font-size: 35px;}
+.page1 .company .com_inner .inner_gr li dl dt{font-size: 18px; font-weight: 800;}
+.page1 .company .com_inner .inner_gr li dl dd{font-size: 17px; line-height: 1.5; padding: 30px 20px 0 20px;}
+
+/*페이지2*/
+
+.page2{}
+.page2 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; text-align: center; margin-top: 30px;}
+
+.page2 h3::after{content: ''; display: block; width: 100%; height: 3px; background: #8fcaca; position: absolute; top: 50px;}
+.page2 p.page_p{ font-family:  'Nanum Gothic', sans-serif; margin-top: 80px; font-size: 18px;
+    font-weight: 800;
+    color: #333; line-height: 1.5em;
+    text-align: center;}
+
+    .page2 p.page_p span{color: #0069ab;}
+
+
+.page2 .cen_circle{position: relative; display: block; width: 200px; height: 200px; border-radius: 100%; border: 2px solid #3b88b4; background: #0069ab; opacity: 1; margin: 0 auto; margin-top: 80px;}
+.page2 .cen_circle::after{content: ''; z-index: -1; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 110%;height: 110%; background: #468eb8; border-radius: 100%;  box-sizing: border-box; opacity: 0; animation: diagramPointer 3s infinite ease-out;}
+.page2 .cen_circle::before{content: ''; z-index: 5; display: block;  position: absolute; left: -10%; top: -10%;width: 120%;height: 120%; border: 2px dashed #f1871e; border-radius: 100%;  box-sizing: border-box; opacity: .8; animation: lateral3 10s linear infinite;}
+@keyframes diagramPointer {
+    0% { opacity:.3 }
+    100% { width:130%; height:130%; opacity:0;}   
+}
+@keyframes lateral3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.page2 .cen_circle p.circle_txt{text-align: center; font-family : 'Arial', sans-serif; font-weight: 700; color: #f0f0f0; margin-top: 55px; line-height: 1.5; text-transform: uppercase; font-size: 20px;}
+
+.page2 .global{width: 100%; margin-top: 50px;}
+.page2 .global .glb_inner{overflow: hidden; width: 94%; padding: 0 3%;}
+
+.page2 .global .glb_inner li{float: left;
+    width: 48%;
+    margin: 40px 4% 0 0;}
+.page2 .global .glb_inner li:nth-of-type(1){}
+.page2 .global .glb_inner li:nth-of-type(2){ margin-right: 0;}
+.page2 .global .glb_inner li:nth-of-type(3){}
+.page2 .global .glb_inner li:nth-of-type(4){margin-right: 0;}
+
+.page2 .global .glb_inner li p.glb_img{margin-bottom: 15px; width: 100%; height: auto;}
+.page2 .global .glb_inner li p.glb_img img{width: 100%;}
+.page2 .global .glb_inner li dl{font-family:  'Nanum Gothic', sans-serif; text-align: justify;}
+.page2 .global .glb_inner li dl dt{font-size: 18px; font-weight: 800; margin-bottom: 18px; color: #333;}
+.page2 .global .glb_inner li dl dd{color: #666; font-size: 14px; padding-right: 25px;}
+
+.page2 .fut_vision{padding: 70px 0;  display: block;   background-color: #f8f8f8;}
+.page2 .fut_vision .fut_inner{width: 100%; margin-bottom: 50px;}
+
+.page2 .fut_vision .fut_inner .fut_tit{text-align: center; word-break: keep-all; font-family : 'Arial', sans-serif;}
+.page2 .fut_vision .fut_inner .fut_tit p.tit1{font-weight: 700; font-size: 16px; color: #f1871e;}
+.page2 .fut_vision .fut_inner .fut_tit p.tit2{font-weight: 400; font-size: 20px; color: #666; margin-top: 10px;}
+
+.page2 .fut_vision .fut_inner dl{width: 80%; border: 2px solid #f1871e; overflow: hidden; border-radius: 15px; margin: 45px 10% 30px;box-sizing:border-box; font-family:  'Nanum Gothic', sans-serif;}
+
+.page2 .fut_vision .fut_inner dl dt{font-size: 1.5em;font-weight: 800;text-align: center; width: 100%; padding: 15px 0; text-transform: uppercase; color:#f0f0f0;
+    background: #f1871e}
+.page2 .fut_vision .fut_inner dl dd{font-size: 1.13em; text-align: justify; padding: 25px 30px; line-height: 1.8em; color: #666;}
+
+
+/*페이지3*/
+.page3{}
+.page3 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-left: 40px; margin-top: 30px;}
+
+.page3 h3::after{    content: ''; display: block; width: 140px; height: 3px; background: #8fcaca; position: absolute; top: 50px; left: -75px;}
+
+.page3 .slide_tab {position:relative;} 
+.page3 .slide_tab .bottom_service .tab_menu{width: 100%;  padding-top: 80px;}
+.page3 .slide_tab .tab_menu li{float: left; width: 33.33%;}
+
+.page3 .slide_tab a.s_tab {display: block; position: relative; height: 55px; color: #333; box-sizing: border-box; text-align: center; transition: all .6s ease-out; text-decoration: none;} 
+.page3 .slide_tab a.s_tab dt{font-size: 18px; line-height: 1.4em; display: block; width: 100%; font-family : 'Nanum Gothic', sans-serif; font-weight: 800; padding-top: 10px;}
+.page3 .slide_tab a.s_tab dt dd{font-size: 15px; padding-top: 10px;}
+
+.page3 .slide_tab .contlist {display:none;margin-top: 55px;}
+.page3 .slide_tab .contlist .comment{ font-family:  'Nanum Gothic', sans-serif;}
+.page3 .slide_tab .contlist .comment .comment_inner .visual_tab{ margin-bottom: 40px;}
+.page3 .slide_tab .contlist .comment .comment_inner .visual_tab img{width: 100%; }
+
+.page3 .slide_tab .contlist .comment .comment_inner .inner{padding: 0 15px;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner:last-child{margin-bottom: 0;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner h4{display: block; margin-bottom: 30px;font-size: 19px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.5625rem; }
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li{ padding: 5% 0; border-top: 1px solid #ddd;}
+
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li:first-child{padding-top:  0; border-top: none;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li .his_year{font-size: 18px; letter-spacing: -0.03em; line-height: 1; display: inline-block; margin-top: 3px; width: 25%; color:#0069ab; font-weight: 600;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li .year_list{display: inline-block; width: 65%; vertical-align: top;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li .year_list li{font-size: 14px; line-height: 2em; position: relative; padding-left: 10px; color: #666;}
+.page3 .slide_tab .contlist .comment .comment_inner .inner .history > li .year_list li span{font-weight: bold; color: #333; margin-right: 8px;}

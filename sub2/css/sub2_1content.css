@@ -1,0 +1,84 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 100px 0;}
+
+#content .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+.charter{width: 100%;}
+.mesage_inner{width: 1200px; margin: 0 auto; padding-bottom: 235px;}
+.mesage_inner .masage_txt{text-align: center; margin: 35px 0px 35px; line-height: 1.8em; font-size: 1.250em; font-weight: 500; color: #666; padding-bottom: 20px;}
+.charter .mesage_inner .top{display: block; width: 1200px; height: 515px; background: url(../images/content1/con2_bg.jpeg)center no-repeat; text-align: center; position: relative; margin: 40px auto 0;}
+.mesage_inner .top .pointer{display: inline-block; padding: 10px 20px; background: #0069ab; color: #fff; border-radius: 20px; font-size: 15px;position: absolute; top: 98px; left: 50%; transform: translateX(-50%);}
+.mesage_inner .top .pointer::before{content: ''; width: 2px; height: 50px; border-radius: 2px; background: #29427d; position: absolute; top: -110px; left: 50%; transform: translateX(-50%); animation: arrowAni 2.2s infinite 0s normal;}
+@keyframes arrowAni{
+    from{top: -150px; opacity: 1;}
+    to{top: 10px; opacity: 0;}
+}
+.mesage_inner .top .bg{font-size: 20px; color: #fff; font-weight: 600; letter-spacing: 7px; display: inline-block; text-align: center; padding: 42px 0; position: absolute; top: 200px; left: 50%; margin-left: -286px; line-height: 2em;}
+.mesage_inner .top .bg::after{content: ''; width: 120%; height: 1px; background: #fff; top: 0; left: 50%; transform: translateX(-50%); position: absolute;}
+.mesage_inner .top .bg::before{content: ''; width: 120%; height: 1px; background: #fff; bottom: 0; left: 50%; transform: translateX(-50%);
+position: absolute;}
+.mesage_inner .top .txt{ width: 100%; max-width: 800px; background: #fff; padding: 20px 0; display: inline-block; position: absolute; top: 444px; left: 50%; margin-left: -400px;}
+.mesage_inner .top .txt .top_txt{text-align: center; padding-bottom: 40px; color: #333; font-size: 20px; font-weight: bold;}
+.mesage_inner .top .txt .bottom_txt{text-align: justify; color: #666; font-size: 18px; line-height: 1.8em; margin: 0 70px 0 70px;}
+.rot{width: 100%; height: 815px; padding-bottom: 150px; background: #f2f2f2;}
+.rot .bottom{width: 1200px; height: 400px; margin: 0 auto; margin-top: -120px; position: relative; padding-top: 10px;}
+.rot .bottom .con1, .con2, .con3{width: 280px; height: 280px; border: 1px dotted #0069ab; border-radius: 100%; position: absolute; font-size: 30px; color: #0069ab; font-weight: bold; margin-top: 340px;}
+.rot .bottom .con1{left: 18%; position: relative;}
+.rot .bottom .con1::after{content: ''; display: block;  position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../images/content1/con3.png) 0 0 no-repeat; background-size: contain; animation: lateral 10s linear infinite;}
+@keyframes lateral {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rot .bottom .con1 .con1_txt{text-align: center; margin-top: 45%;}
+.rot .bottom .con2{top: 0; left: 50%; margin-left: -125px;}
+.rot .bottom .con2::after{content: ''; display: block;  position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../images/content1/con3.png) 0 0 no-repeat; background-size: contain; animation: lateral2 10s linear infinite;}
+@keyframes lateral2 {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.rot .bottom .con2 .con2_txt{text-align: center; margin-top: 45%;}
+.rot .bottom .con3{top: 0; right: 15%;}
+.rot .bottom .con3::after{content: ''; display: block;  position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../images/content1/con3.png) 0 0 no-repeat; background-size: contain; animation: lateral3 10s linear infinite;}
+@keyframes lateral3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rot .bottom .con3 .con3_txt{text-align: center; margin-top: 45%;}
+.rot .bottom .con1 .sub1_txt{font-size: 16px; font-weight: lighter; color: #333; text-align: justify; line-height: 1.8em; margin: 0 8px 0 8px; padding-top: 160px; position: relative;}
+.rot .bottom .con1 .sub1_txt::before{content: ''; display: block; width: 1px; height: 65px; background: #f1871e; position: absolute; top: 80px; left: 50%;}
+.rot .bottom .con1 .sub1_txt span{color: #f1871e; font-weight: bold;}
+.rot .bottom .con2 .sub2_txt{font-size: 16px; font-weight: lighter; color: #333; text-align: justify; line-height: 1.8em; margin: 0 8px 0 8px; position: absolute; top: -130px}
+.rot .bottom .con2 .sub2_txt::before{content: ''; display: block; width: 1px; height: 65px; background: #f1871e; position: absolute; top: 100px; left: 50%;}
+.rot .bottom .con2 .sub2_txt span{color: #f1871e; font-weight: bold;}
+.rot .bottom .con3 .sub3_txt{font-size: 16px; font-weight: lighter; color: #333; text-align: justify; line-height: 1.8em; margin: 0 8px 0 8px; padding-top: 160px;}
+.rot .bottom .con3 .sub3_txt::before{content: ''; display: block; width: 1px; height: 65px; background: #f1871e; position: absolute; top: 245px; left: 50%;}
+.rot .bottom .con3 .sub3_txt span{color: #f1871e; font-weight: bold;}
+
+
+.rot .rot_txt{text-align: center;
+line-height: 1.8em;
+font-size: 1.50em;
+font-weight: 500;
+color: rgb(102, 102, 102);
+padding-top: 70px;}
+.rot .rot_txt span{color: #0069ab;}

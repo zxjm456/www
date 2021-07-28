@@ -1,0 +1,134 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.title_area
+.sub_overview{margin-bottom: -17px;}
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 33.3%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+
+
+
+
+
+/*sticky 메뉴 */
+#content .title_area .sub_overview.menu_sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0069ab;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky ul{
+    width: 1200px;
+    margin: 0 auto; 
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a{
+    color: #fff;
+    padding: 25px 0;
+    font-size: 1.429em;
+    font-family:  'Nanum Gothic', sans-serif; font-weight: 700;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a::after{
+    display: none;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky .spy{
+    background: #fff;
+    color: #0069ab;
+    z-index: 200;
+}
+/*sticky 메뉴 end*/
+
+/*기업소개 내용*/
+#content .content_area{}
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 100px 0;}
+/*소개*/
+section#intro{width: 100%; margin: 0 auto; margin-bottom: 150px;}
+#intro .intro_inner{width: 1200px; margin: 0 auto;}
+#intro .intro_inner div{}
+
+
+#intro .intro_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#intro .intro_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#intro .intro_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+
+#intro .intro_inner .con_bg{width: 555px; position: relative; left: 30%; box-shadow: 15px -15px 15px -2px #ccc; border-radius: 20px 0 20px 0;}
+#intro .intro_inner .con_logo{position: relative; left: 35%; transform: rotate(-25deg);}
+#intro .intro_inner p:nth-of-type(1){font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;}
+#intro .intro_inner p:nth-of-type(1) span{color: #0069ab}
+#intro .intro_inner .intro_topic{width: 200px; height: 40px; background: #fff; font position: relative; top: -56px; left: 44%; border-radius: 12px; text-align: center; padding-top: 20px; font-size: 1.250em; color: #333; font-weight: bold;}
+#intro .intro_inner .intro_text{text-align: left; margin: 40px 0 50px 100px; font-size: 1.125em; color: #666; line-height: 2em;}
+#intro .intro_inner .intro_text span{color: #f1871e;}
+#intro .intro_inner .left{width: 1200px;  margin: 0 auto; position: relative;}
+#intro .intro_inner .left .circle{display: block;  position: absolute; bottom: -700px; left: -152px; width: 800px; height: 800px; border: 1px solid #ccc; border-radius: 400px; z-index: -1;}
+    
+/*케미칼 비전*/
+section#vision{width: 100%; margin: 0 auto; margin-bottom: 150px;}
+#vision .vision_inner{width: 1200px; margin: 0 auto;}
+
+#vision .vision_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#vision .vision_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#vision .vision_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#vision .vision_inner .con_bg{width: 555px; position: relative; left: 8%; box-shadow: -15px -15px 15px -2px #ccc; border-radius: 0 20px 0 20px;}
+#vision .vision_inner  p:nth-of-type(1){font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;}
+#vision .vision_inner  p:nth-of-type(1) span{color: #0069ab}
+#vision .vision_inner .vision_topic{width: 200px; height: 40px; background: #fff; position: relative; top: -54px; left: 46%; border-radius: 12px; text-align: center; padding-top: 20px; font-size: 1.250em; color: #333; font-weight: bold;}
+#vision .vision_inner .vision_text{text-align: right; margin: -40px 100px 50px 0px; font-size: 1.125em; color: #666; line-height: 2em;}
+#vision .vision_inner .vision_text span{color: #f1871e;}
+
+/*회사연혁*/
+section#history{width: 100%; margin: 0 auto; margin-bottom: 150px;}
+#history .history_inner{width: 1200px; margin: 0 auto;}
+#history .history_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#history .history_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#history .history_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+#history .history_inner  .inner_txt{font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;}
+#history .history_inner  .inner_txt span{color: #0069ab}
+
+#history .history_inner .list_txt{font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;}
+#history .history_inner .list_txt h4{margin-bottom: 8px; position: relative;}
+#history .history_inner .list_txt h4::before{content: ''; position: absolute; top:24px; left:50%; margin-left: -67px; width: 137px; height: 10px; background: #0069ab; opacity: .6; transform: skew(-30deg);}
+#history .history_inner .list_txt p{font-weight: bold; position: relative;}
+#history .history_inner .list_txt p::before{content: ''; position: absolute; top: 6; left: 40.7%; width: 15px; height: 15px; border-radius: 50%; background: #0069ab; opacity: .6; }
+
+
+.tabs {position:relative; width: 1200px; margin: 0 auto;} 
+.tabs .tab_menu{overflow: hidden; border: 1px solid #ccc; width: 825px; margin: 0 auto;}
+.tabs .tab_menu li{ float: left; width: 33.3%; transition: all .5s;}
+.tabs .tab_menu li:hover{background: #0069ab;}
+.tabs .tab_menu li:hover a{display: block; color: #fff;}
+.tabs .tab_menu li:nth-of-type(3){margin-right: 0px;}
+.tabs a.tab {display: block; text-align: center; font-size: 1.563em; padding: 20px 0; line-height: 30px; color: #666; font-weight: 600; transition: all .3s; border: 1px solid transparent; border-right: 1px solid #ccc; text-decoration: none;} 
+.tabs a.tab:nth-of-type(3){ border-right: none;}
+.tabs .contlist {display:none; margin-top: 120px;}
+.tabs .contlist .comment{width: 1200px; margin: 0 auto; position: relative;}
+.tabs .contlist .con1{height: 960px;}
+.tabs .contlist .con2{height: 860px;}
+.tabs .contlist .con3{height: 1632px;}
+.tabs .contlist .comment .comment_inner{width: 100%; position: absolute; left: 50%; margin-left: -600px;}
+.tabs .contlist .comment .comment_inner::after{content: ''; width: 1px; position: absolute; left: 50%; top: 10px; background: #ccc;}
+.tabs .contlist .comment .line1::after{ height: 867px;}
+.tabs .contlist .comment .line2::after{height: 725px;}
+.tabs .contlist .comment .line3::after{height: 1502px;}
+.tabs .contlist .comment .comment_inner dl{margin-bottom: 60px;}
+.tabs .contlist .comment .comment_inner dl:nth-of-type(odd){margin-left: 630px;}
+.tabs .contlist .comment .comment_inner dl:nth-of-type(even){text-align: right; width: 520px;}
+.tabs .contlist .comment .comment_inner dl:nth-of-type(1) dt::after{content: ''; width: 20px; height: 20px; border: 1px solid #0069ab; border-radius: 50%; position: absolute; top: 4px; left: -41px;}
+.tabs .contlist .comment .comment_inner dl:nth-of-type(odd) dt::before{left: -35px;}
+.tabs .contlist .comment .comment_inner dl:nth-of-type(even) dt::before{right: -85px;}
+.tabs .contlist .comment .comment_inner dt{font-size: 1.857em; font-weight: bold; color: #0069ab; margin-bottom: 25px; position: relative; z-index: 1;}
+.tabs .contlist .comment .comment_inner dt::before{content: ''; width: 10px; height: 10px; background: #0069ab;position: absolute; top: 10px; z-index: -1; border-radius: 50%;}
+.tabs .contlist .comment .comment_inner dd{font-size: 1.063em; color: #666; margin-bottom: 10px; overflow: hidden;}

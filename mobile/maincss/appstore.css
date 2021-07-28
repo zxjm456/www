@@ -1,0 +1,17 @@
+.thumbs-container .swiper-slide {
+	width: 345px;
+	text-align: left;
+	position: relative;
+}
+.thumbs-container img {
+	cursor:pointer;
+	width: 290px;
+
+	margin-right:5px;
+	border-radius:10px;
+}
+.thumbs-container img:first-child{margin-left: 100px;}
+.thumbs-container dl{width: 245px; position: absolute; top: 0; left: 120px; color: #fff;}
+.thumbs-container dl dt{font-family : 'Arial', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase;}
+.thumbs-container dl dd{font-family : 'Nanum Gothic', sans-serif; text-align: justify; line-height: 1.8em; position: absolute; top: 42px; left: -40px;}
+.thumbs-container a{display: block; position: absolute; bottom: 10px; right: -33px; color: #f0f0f0; font-size: 15px;}

@@ -1,0 +1,41 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.sub_overview{margin-bottom: -17px;}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 33.3%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+#content .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+.faq{width: 1100px; border-bottom:1px solid #ddd;font-size:12px; margin-top: 150px; margin: 0 auto; margin-bottom: 150px;}  
+.faq .hgroup{position:relative; font-family : 'Nanum Gothic', sans-serif; font-weight: 800; font-size: 25px; padding-left: 20px; margin-bottom: 25px;margin-top: 150px; }
+.faq .hgroup h3{line-height: 1.5em;}
+.faq .hgroup h3>span{color: #0069ab;}
+.faq .hgroup .all{position:absolute; top:5px; right:10px; color:#666; font-size: 16px;}  
+.faq ul{margin:0;padding:0;list-style:none}  
+.faq .q{margin:0; border-top: 1px solid #ddd; position: relative; font-family : 'Nanum Gothic', sans-serif; font-weight: 800; font-size: 16px; background: #fff;}
+.faq .q a.trigger{display:block;padding:30px 15px;background:rgba(19,101,187,.1);color:#333;text-align:left; transition: all .3s;}  
+.faq .hide .q a.trigger{font-weight:normal;background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#0069ab;color:#fff} 
+.faq .q span{display: block; position: absolute; right: 45px; top:30px; }
+.faq .q span:hover{color: #fff;}
+.faq .a{margin:0; display: none; padding: 30px 35px; line-height: 30px; overflow: hidden;text-align: justify;
+font-size: 15px; background: #f9f9f9;} 
+/* .faq .q i{color:#1365bb}
+.faq .a i{color:#ff0000} */
+.faq i{font-size:15px;margin-right:10px}
+.faq .q i{transition: all .3s;}
+.faq .q:hover i{color: #fff;}
+.faq .a:hover i{}

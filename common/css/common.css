@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 16px;
+color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+.hidden{display: block; position: absolute;
+left: -1000%; width: 1px; height: 1px;
+overflow: hidden; color: #fff}
+
+/*헤드라인 폰트 연결*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family : 'Nanum Gothic', sans-serif;* font-weight: 400, 700 ,800,/
+
+
+/*스킵네비게이션*/
+#skipNav{position:relative;width:100%;overflow:hidden; z-index: 10;}
+   #skipNav a{display:block; height:1px; margin-bottom:-1px;
+      overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:16px;}
+   #skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:10px 0; background: #f2f2f2;}
+/*헤더공통영역*/
+.wrap{width: 100%; overflow: hidden;}
+/*headerArea*/
+#headerArea{position: fixed; width: 100%; z-index: 100; background: #fff; box-shadow: 0 0 10px #999;}
+#headerArea::before{content: ''; display: block; width: 100%; height: 40px; background: #0069ab; position: absolute; left: 0; top: 0; z-index: -1;} 
+#headerArea .header_inner{width: 1200px; margin: 0 auto;}
+#headerArea .top_menu{overflow: hidden;}
+.top_menu .sns{float: left;}
+.top_menu .sns ul{overflow: hidden;}
+.top_menu .sns li{float: left;  font-size: 20px; margin: 10px 5px 0 5px;}
+.top_menu .sns li a{color: #eee;transition: .3s;}
+.top_menu .sns li:hover a{color: #333; }
+
+.top_menu .login{float: right;}
+.top_menu .login ul{}
+.top_menu .login li{float: left; font-family: 'Arial' , sans-serif; font-weight: 700; font-size: 0.938em; margin: 10px 15px 0 0; height: 16px;}
+.top_menu .login li:nth-of-type(1){padding-right: 10px;}
+
+.top_menu .login li a{color: #fff; transition: .3s;}
+.top_menu .login li:hover a{color: #333;}
+
+.top_menu .login li:last-of-type a::after{width: 0px;}
+
+#headerArea .logo{}
+#headerArea .logo a{display: block; width: 120px; height: 32px; margin: 30px auto 0 auto; background: url(../images/heda_logo.png)0 0 no-repeat; background-size: contain; text-indent: -9999px; overflow: hidden; }
+
+#headerArea #gnb{padding: 15px 0 35px 0px;}
+
+
+
+#gnb ul.dropdownmenu{float:left; padding-left: 80px;}
+#gnb ul.dropdownmenu li.menu{position:relative;float:left; width:20%; height: 70px;}
+
+#gnb ul.dropdownmenu li h3{ font-family : 'Nanum Gothic', sans-serif; font-weight: 800; font-size: 1.375em;}
+ #gnb ul.dropdownmenu li a.depth1{display:block;width:166px;padding: 15px 0; 
+         text-align: center; transition: all .5s; padding: 20px; }
+
+          #gnb ul.dropdownmenu li.menu:after {content: "";display: block;width: 0;height: 4px;background: #0069ab ;position: absolute;left: 50%;bottom: 0px;opacity: 0;transition: all .4s ease;}
+        #gnb ul.dropdownmenu li.menu:hover:after {width: 100%;left: 0;opacity: 1}
+ /* 2depth */
+#gnb ul.dropdownmenu li ul{width:100%; height:180px; position:absolute;top:70px;left:0;
+     padding:15px 0; line-height:2em; display: none;}
+
+#gnb ul.dropdownmenu li ul li{ text-align:center; font-weight:bold;}
+#gnb ul.dropdownmenu li ul li a{display:block;  color:#666; padding-bottom: 10px; transition: all .4s;}
+#gnb ul.dropdownmenu li ul li a:hover{color: #0069ab;}
+
+
+
+/* #headerArea #gnb ul{}
+#headerArea #gnb li{float: left; width: 155px; text-align: center; }
+#headerArea #gnb li a{font-family : 'Nanum Gothic', sans-serif; font-weight: 700; font-size: 1.375em; padding: 20px;} */
+/*푸터공통영역*/
+
+#footerArea{background: #277eb5; height: 312px; clear: both; color:#fff}
+#footerArea .footer_inner{width: 1200px; margin: 0 auto; text-align: center;}
+#footerArea .service{overflow: hidden; padding: 30px 0; margin-left: 395px;}
+#footerArea .service li{float: left; margin-right: 20px; position: relative; }
+#footerArea .service li::after {content: ''; width: 1px; height: 10px; 
+   background: #fff; display: block; position: absolute; top: 3px; right: -10px;} 
+#footerArea .service li:last-child::after {content: ''; display: none;}    
+#footerArea .service li a{color:#fff; font-size:16px; font-weight: bold;}
+
+#footerArea address{line-height: 1.5em; margin-bottom: 15px;}
+#footerArea p{margin-bottom: 15px;}
+#footerArea .footer_family .famil_wrap{width: 180px; position: relative; top: 0; left: 50%; margin: 0 0 30px -100px;}
+#footerArea .footer_family .famil_wrap .arrow{display: block; width: 180px; padding: 15px 0 15px 20px;  color: #fff; background: #3c3c3c; overflow: hidden; font-size: 0.857em;}
+#footerArea .footer_family .famil_wrap .arrow span{float: right;  padding: 0 18px; display: block;}
+#footerArea .footer_family .famil_wrap .arrow span::after{content: ''; width: 1px; height: 46px; background: #2e2e2e; position: absolute; top: 0; right: 26px;}
+#footerArea .footer_family .famil_wrap .aList{position: absolute; top: -175px; left:0px; width:200px; display:none}
+#footerArea .footer_family .famil_wrap .aList li{}
+#footerArea .footer_family .famil_wrap .aList li a{padding: 14px 20px; display: block; font-size: 0.857em; background: rgba(60,60,60,.8); color: #fff;}
+#footerArea .footer_family .famil_wrap .aList li a:hover{ background:#F0F0F0; color:#666}
+#footerArea .footer_logo{margin-bottom: 30px;}
+
+
+
+
+/**상단 이동 버튼**/
+.topMove{display:block; width: 50px;
+   height: 50px; border: 5px solid #277eb5;
+ position: fixed; left:50%; margin-left: 700px; 
+   bottom:362px;
+}
+.topMove i{font-size: 30px; font-weight: bold; color: #277eb5; transform: rotate(-45deg); padding-top: 9px; padding-right: 5px;}
+
+
+
+
+
+
+
+

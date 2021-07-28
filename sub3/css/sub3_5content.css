@@ -1,0 +1,121 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.sub_overview{margin-bottom: -17px;}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 50%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+
+
+
+
+
+/*sticky 메뉴 */
+#content .title_area .sub_overview.menu_sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0069ab;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky ul{
+    width: 1200px;
+    margin: 0 auto; 
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a{
+    color: #fff;
+    padding: 25px 0;
+    font-size: 1.429em;
+    font-family:  'Nanum Gothic', sans-serif; font-weight: 700;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a::after{
+    display: none;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky .spy{
+    background: #fff;
+    color: #0069ab;
+    z-index: 200;
+}
+/*sticky 메뉴 end*/
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 50px 0;}
+
+#field .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#field .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#field .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#license .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#license .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#license .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+
+
+
+
+/**statr 영업**/
+#field{width: 100%;}
+
+
+#field .field_inner{width: 1200px; overflow: hidden; margin: 0 auto;}
+#field .field_inner .left{float: left;width: 50%; padding: 125px 0 0 60px;}
+#field .field_inner .right{float: right; width: 50%; height: 600px; margin-top: -527px; position: relative;}
+
+#field .field_inner .left dl{padding-bottom: 55px; font-family: 'Nanum Gothic', sans-serif; font-weight: 800; text-align: justify;}
+
+#field .field_inner .left dt{padding-bottom: 5px; font-size: 2em; text-transform: uppercase; color: #0069ab;}
+
+#field .field_inner .left dd{font-size: 18px; color: #333;}
+#field .field_inner .left  p{padding-right: 190px; font-size: 15px; color: #666; line-height: 1.8em; text-align: justify; margin-bottom: 20px;}
+
+#field .field_inner .left  p:nth-of-type(2){margin-bottom: 0px;}
+
+
+
+#field .field_inner .right ul{width: 500px; height: 500px; border: 7px solid #0069ab; overflow: hidden; position: absolute; top: 50%; left: 45%; margin-top: -250px; margin-left: -230px;} 
+#field .field_inner .right li{float: left; box-sizing: border-box;}
+#field .field_inner .right .con1{width: 250px; height: 250px; background: url(../images/content5/sec1_con1.png)center 70px no-repeat; transition: all .3s ease-out;}
+#field .field_inner .right .con1:hover{background: #0069ab url(../images/content5/sec1_con1_h.png)center 70px no-repeat;}
+#field .field_inner .right .con1:hover p{color: #fff;}
+#field .field_inner .right .con2{width: 250px; height: 250px; background: url(../images/content5/sec1_con2.png)center 70px no-repeat; transition: all .3s ease-out;}
+#field .field_inner .right .con2:hover{background: #0069ab url(../images/content5/sec1_con2_h.png)center 70px no-repeat;}
+#field .field_inner .right .con2:hover p{color: #fff;}
+#field .field_inner .right .con3{width: 250px; height: 250px; background: url(../images/content5/sec1_con3.png)center 70px no-repeat; transition: all .3s ease-out;}
+#field .field_inner .right .con3:hover{background: #0069ab url(../images/content5/sec1_con3_h.png)center 70px no-repeat;}
+#field .field_inner .right .con3:hover p{color: #fff;}
+#field .field_inner .right .con4{width: 250px; height: 250px; background: url(../images/content5/sec1_con4.png)center 70px no-repeat; transition: all .3s ease-out;}
+#field .field_inner .right .con4:hover{background: #0069ab url(../images/content5/sec1_con4_h.png)center 70px no-repeat;}
+#field .field_inner .right .con4:hover p{color: #fff;}
+#field .field_inner .right li p{text-align: center; font-size: 18px; color: #0069ab; font-family: 'Nanum Gothic', sans-serif; font-weight: 800; margin-top: 180px;}
+
+/*******start 자격증******/
+#license{width: 100%; margin-bottom: 150px;}
+
+#license .license_inner{width: 1200px;overflow: hidden; margin: 0 auto; margin-top: 70px;}
+#license .license_inner .left ul{}
+#license .license_inner .left{float: left;}
+#license .license_inner .left li{width: 600px; background: #0069ab; color: #fff; margin-bottom: 70px; position: relative; border-radius: 0 10px 10px 0;}
+#license .license_inner .left li:nth-of-type(3){margin-bottom: 0px;}
+#license .license_inner .left li dl{padding: 10px 50px 10px 100px; text-align: justify;}
+#license .license_inner .left li dt{font-size: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight: 800; margin-bottom: 20px;}
+#license .license_inner .left li dd{color: #f0f0f0; line-height: 1.5em;}
+#license .license_inner .left li::after{content: ''; width: 100px; height: 100px; border-radius: 50%; background: rgb(224, 224, 224); position: absolute; top: 30px; left: -50px; opacity: .7;}
+#license .license_inner .right{margin-top: 80px; padding-left: 700px; text-align: right; padding-right: 30px;}
+
+#license .license_inner .right dl{padding-bottom: 55px; font-family: 'Nanum Gothic', sans-serif; font-weight: 800;}
+#license .license_inner .right dt{padding-bottom: 5px; font-size: 2em; text-transform: uppercase; color: #0069ab; margin-bottom: 15px;}
+#license .license_inner .right dd{font-size: 18px; line-height: 1.8em;}
+
+#license .license_inner .right p{font-size: 15px; color: #666; line-height: 1.8em; margin-bottom: 20px;}
+
+#license .license_inner .right p:nth-of-type(2){margin-bottom: 0px;}

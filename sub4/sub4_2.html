@@ -1,0 +1,429 @@
+<?
+	session_start();
+	@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스코케미칼 재무정보</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_2content.css">
+    <link rel='stylesheet' href='./css/Nwagon.css' type='text/css'>
+	<script src='./js/Nwagon.js'></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+
+        <!--[if IE 9]>  
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <div class="wrap">
+        <!--서브 헤더-->
+        <? include "../common/sub_head.html" ?>
+        <div class="visual">
+            <img src="./common/images/investment.png" alt="4서브페이지 비주얼">
+        </div>
+        <div class="sub_menu">
+            <h3>투자정보</h3>
+            <p>investment information<br />service</p>
+            <div class="right_line">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="./sub4_1.html">IR 기업이념</a></li>
+                <li class="overview"><a href="./sub4_2.html">재무정보</a></li>
+                <li><a href="../concert/list.php">해외사업</a></li>
+
+            </ul>
+            <div class="left_line">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <article id="content">
+            <div class="title_area linner">
+                <div class="inner">
+                    <div class="line_map">
+                        HOME &gt; 투자정보 &gt; <strong>재무정보</strong>
+                    </div>
+                    <h2>재무정보</h2>
+                    <div class="sub_overview">
+                        <ul>
+                            <li><a class="link1" href="#">주가현황</a></li>
+                            <li><a class="link2" href="#">주식/주주현황</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content_area">
+                <section id="stock">
+                    <h3>주가현황</h3>
+                    <span class="deco"></span>
+                    <p><span>포스코케미칼</span>은 새로운 가치와 이윤창출을 위해 여러분에게 제공합니다.</p>
+                    <div class="stock_inner">
+                        <div class="figure">
+                            <dl class="figure_t">
+                                <dt><i class="fas fa-caret-up"></i></dt>
+                                <dd>194,000</dd>
+                                <dt>전일대비</dt>
+                                <dd><i class="fas fa-caret-up"></i>3,500</dd>
+                                <dt>등락률</dt>
+                                <dd>+1.57%</dd>
+                            </dl>
+                            <dl class="figure_b">
+                                <dt>시가(원)</dt>
+                                <dd>173,830</dd>
+                                <dt>고가(원)</dt>
+                                <dd>215,120</dd>
+                                <dt>저가(원)</dt>
+                                <dd>280,000</dd>
+                                <dt>거래량(주)</dt>
+                                <dd>177,380</dd>
+                            </dl>
+                        </div>
+                        <div class="stock_box">
+                            <ul>
+                                <li class="kospi">
+                                    <dl>
+                                        <dt>kospi</dt>
+                                        <dd>3,150.32</dd>
+                                        <dd><i class="fas fa-caret-down"></i>10.77(0.23%)</dd>
+                                    </dl>
+                                </li>
+                                <li class="kosdaq">
+                                    <dl>
+                                        <dt>kosdaq</dt>
+                                        <dd>901.48</dd>
+                                        <dd><i class="fas fa-caret-up"></i>3.04(0.21%)</dd>
+                                    </dl>
+                                </li>
+                                <li class="chemical">
+                                    <dl>
+                                        <dt>케미칼</dt>
+                                        <dd>7,58.712</dd>
+                                        <dd><i class="fas fa-caret-up"></i>28.04(0.48%)</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chart">
+                            <div class="graph">
+                                <p><span>포스코케미칼</span> 주가 현황</p>
+                                <div class="graph_inner">
+                                    <div id="chart71"></div>
+                                    <script>
+                                        var options = {
+                                            'legend':{
+                                                names: ['1998년', '2000년', '2002년', '2004년', '2006년', '2008년', '2010년', '2012년', '2014년', '2016년', '2018년', '2020년']
+                                                    },
+                                            'dataset':{
+                                                title:'Playing time per day', 
+                                                values: [[12,76], [22,66], [42,62], [58,70], [65, 76], [56,83], [52, 73], [70,66], [77,66], [79,56], [88,76], [95, 56]],
+                                                colorset: ['#0069ab', '#ad0000'],
+                                                fields:['40주 최고가(원)', '40주 최저가(원)']
+                                            },
+                                            'chartDiv' : 'chart71',
+                                            'chartType' : 'line',
+                                            'leftOffsetValue': 40,
+                                            'bottomOffsetValue': 60,
+                                            'chartSize' : {width:1000, height:500},
+                                            'minValue' :0,
+                                            'maxValue' : 100,
+                                            'increment' : 10,
+                                            'isGuideLineNeeded' : true //default set to false
+                                        };
+                                
+                                        Nwagon.chart(options);
+                                    </script>
+                                </div>
+                            </div>
+                            
+                            <div class="chart_table">
+                                <table class="capital_table">
+                                    <caption>주식정보: 전일가,전일거래량,40주최고가,40주최저가,외국인보유,외국지분율,자본금,상장주식,액면가,시가총액</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>전일가(원)</th>
+                                            <td class="won_b">234,000</td>
+                                            <th>전일거래량(주)</th>
+                                            <td>179,125</td>
+                                        </tr>
+                                        <tr>
+                                            <th>40주 최고가(원)</th>
+                                            <td class="week_b">314,000</td>
+                                            <th>40주 최저가(원)</th>
+                                            <td class="week_w">124,743</td>
+                                        </tr>
+                                        <tr>
+                                            <th>외국인보유(천주)</th>
+                                            <td>88,54</td>
+                                            <th>외국인지분율(%)</th>
+                                            <td>26.12</td>
+                                        </tr>
+                                        <tr>
+                                            <th>자본금(억원)</th>
+                                            <td>1,245</td>
+                                            <th>상장주식(천주)</th>
+                                            <td>34,235</td>
+                                        </tr>
+                                        <tr>
+                                            <th>액면가(원)</th>
+                                            <td>4,222</td>
+                                            <th>시가총액(억원)</th>
+                                            <td>215,32</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <section id="present">
+                    <h3>주식/주주현황</h3>
+                    <span class="deco"></span>
+                    <div class="present_inner">
+                        <div class="publish">
+                            <h4>주식 발행현황</h4>
+                            <div class="con2 publish_inner">
+                                <p>2020. 09. 11 기준</p>
+                                <table>
+                                    <caption>보통주,우선주, 액면가 총액</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">종류</th>
+                                            <th>발행주식(주)</th>
+                                            <th>액면가액 총액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>기명식</td>
+                                            <td>보통주</td>
+                                            <td>24,456,019</td>
+                                            <td>178,529,483,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기명식</td>
+                                            <td>우선주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2">총액</td>
+                                            <td>29,832,319</td>
+                                            <td>108,493,492,000</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="current">
+                            <h4>주주현황</h4>
+                            <div class="con2 current_inner">
+                                <p>2021. 03. 31. 기준</p>
+                                <table>
+                                    <caption>최대주주 및 특수 관계인 5%이상 주주및 기타 주주</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>이름</th>
+                                            <th>관계</th>
+                                            <th>주식수</th>
+                                            <th>지분율<span>(단위:%)</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="7">최대주주 및 특수 관계자</td>
+                                            <td>철강부문</td>
+                                            <td>최대주주</td>
+                                            <td>4,239,023</td>
+                                            <td>14.59</td>
+                                        </tr>
+                                        <tr>
+                                            <td>케미칼부문</td>
+                                            <td>계열회사</td>
+                                            <td>3,129,920</td>
+                                            <td>19,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GLOBAL INFRA부문</td>
+                                            <td>계열회사</td>
+                                            <td>2,559,030</td>
+                                            <td>3,60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>민경준</td>
+                                            <td>임원</td>
+                                            <td>39,12</td>
+                                            <td>1.03</td>
+                                        </tr>
+                                        <tr>
+                                            <td>포스코 재단</td>
+                                            <td>특수관계자</td>
+                                            <td>12,234</td>
+                                            <td>0.04</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기타 특수관계자</td>
+                                            <td>특수관계자</td>
+                                            <td>214</td>
+                                            <td>0.02</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">합계</td>
+                                            <td>17,245,145</td>
+                                            <td>53.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">5%이상 주주 및 기타주주</td>
+                                            <td colspan="2">국민연금</td>
+                                            <td>4,291,042</td>
+                                            <td>9.18</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">기타주주</td>
+                                            <td>14,294,402</td>
+                                            <td>30.17</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">합계</td>
+                                            <td>17,924,120</td>
+                                            <td>34.20</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3">총합계</td>
+                                            <td>38,493,492</td>
+                                            <td>100</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="composition">
+                            <h4>주주 구성비율</h4>
+                            <div class="con2 composition_inner">
+                                <p>2021. 03. 05. 기준</p>
+                                <div class="circle">
+                                    <ul class="circle_t">
+                                        <li>
+                                            <p>포스코(최대주주)</p>
+                                        </li>
+                                        <li>
+                                            <p>포스코케미칼(주)</p>
+                                        </li>
+                                        <li>
+                                            <p>GLOBAL INFRA</p>
+                                        </li>
+                                        <li>
+                                            <p>기타 특수관계자</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="undeer_line"></div>
+                                <div class="percent">
+                                    <ul class="percent_inner">
+                                        <li>
+                                            <i class="fas fa-caret-down"></i>
+                                            <p>35.33%</p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-caret-down"></i>
+                                            <p>14.42%</p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-caret-down"></i>
+                                            <p>8.42%</p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-caret-down"></i>
+                                            <p>0.63%</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h4>제65기 주주총회 결과</h4>
+                            <div class="con2 general_inner">
+                                <p>※ 개최일 : 2021. 03. 23</p>
+                                <table>
+                                    <caption>주식수,찬성률</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">주주총회 의안</th>
+                                            <th>주식수</th>
+                                            <th>찬성률(%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1호 의안</td>
+                                            <td>65기 재무제표(잉여처분계산서(안)포함) 승인의 건</td>
+                                            <td>26,437,204</td>
+                                            <td>97%</td>
+                                        </tr>    
+                                        <tr>
+                                            <td>2호 의안</td>
+                                            <td>정관 변경의 건</td>
+                                            <td>27,293,467</td>
+                                            <td>99.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3호 의안</td>
+                                            <td>이사 선임의 건(사내이사 3명, 기타비상무이사 1명)</td>
+                                            <td>22,257,441</td>
+                                            <td>82%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4호 의안</td>
+                                            <td>감사위원회 위원이 되는 사외이사 선임의 건(1명)</td>
+                                            <td>9,466,103</td>
+                                            <td>99.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5호 의안</td>
+                                            <td>이사 보수한도 승인의 건</td>
+                                            <td>27,293,467</td>
+                                            <td>99.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6호 의안</td>
+                                            <td>임원 퇴직금 지급 규정 개정의 건</td>
+                                            <td>27,293,467</td>
+                                            <td>99.9%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <!--서브푸터영역-->
+        <? include "../common/sub_foot.html" ?>
+        
+    </div>
+              <!--JQuery-->
+              <script src="../common/js/jquery-1.12.4.min.js"></script>
+              <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+              <script src="../common/js/fullnav.js"></script>
+              <script src="./js/slide.js"></script>
+              
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* CSS Document */
+
+#wrap .main{overflow: hidden; margin-top: 50px;}
+#wrap .gallery{overflow: hidden; background: rgb(0,105,171); position: relative;}
+#wrap .gallery li{display: none;}
+
+#wrap .gallery li img{width: 100%; animation-name: imgAnimation; animation-duration: 6s; animation-iteration-count: 1; animation-timing-function: linear; opacity: .8; transform: scale(1.0);}
+@keyframes imgAnimation{
+    from{
+        transform: scale(1);
+        opacity: .8
+    }
+    50%{
+        opacity: 1
+    }    
+    to{
+        transform: scale(1.1);
+        opacity: .8
+    }
+}
+
+#wrap .gallery .text_box{width: 100%; position: absolute; top: 109px; text-align: center;}
+#wrap .text_box .lg_title{font-size: 2.1em; text-transform: capitalize; font-family: 'Arial', sans-serif; letter-spacing: 2px; line-height: 1.3em; color: #fff; font-weight: 600; margin-bottom: 180px;}
+#wrap .text_box .sub_title{margin: 25px 0; font-size: 1.125em; line-height: 1.7em; color: #f0f0f0;}
+#wrap .text_box span{display: inline-block;}
+#wrap .text_box .lg_title span{color: #f1871e;}
+
+
+#wrap .main_quick{overflow: hidden; width: 50%; left: -21%; position: absolute; top: 5.8%;}
+#wrap .main_quick li{margin-bottom: 20px;}
+#wrap .main_quick li a{text-align: center; display: block; width: 12px; height: 12px; margin: 0 auto; font-size: 1.286em; color: #fff; background: #ccc; line-height: 38px; border-radius: 50%; font-weight: 600;}
+#wrap .main_quick li a.active{background: #fff;}
+
+#wrap .loading_bar{height: 8px; background: #ccc; position: relative;}
+#wrap .process{ position: absolute; top: 0; left: 0; width: 0; height: 100%; background: rgb(0,105,171); background: linear-gradient(90deg, rgba(0,174,255,1) 0%, rgba(0,105,171,1) 100%);}
+
+/*content*/
+
+
+#content{background: #fff;}
+
+
+
+.main_p{padding-top: 100px;}
+.main_p h3{font-family : 'Arial', sans-serif; font-size: 2.875em; font-weight: 800; color: rgb(0,105,171); position: relative; margin-left: 40px; margin-bottom: 96px;}
+.main_p h3 span{color: #f1871e;}
+.main_p h3::after{content: ''; display: block; width: 105px; height: 2px; background: rgb(0,105,171); position: absolute; top: 80px; left: -40px;}
+
+
+.main_p .main_inner{width: 100%; margin-top: 85px; position: relative;}
+.main_p .main_inner::after{content: ''; display: block; width: 320px; height: 320px; position: absolute; top: -38px; left: -60px; background: #3186bb; border-radius: 0 10px 10px 0;}
+
+
+/*스와이퍼 소스*/
+.thumbs-container .swiper-slide {width: 345px; text-align: left; position: relative;}
+.thumbs-container img {margin-right:5px;border-radius:13px;}
+.thumbs-container img:first-child{margin-left: 16%;}
+.thumbs-container dl{width: 243px; position: absolute; top: 25px; left: 80px; color: #fff;}
+.thumbs-container dl dt{font-family : 'Arial', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase;}
+.thumbs-container dl dd{font-family : 'Nanum Gothic', sans-serif; text-align: justify; line-height: 1.8em; position: absolute; top: 42px; left: 0px;}
+.thumbs-container a{display: block; position: absolute; bottom: 10px; right: 10px; color: #f0f0f0; font-size: 15px; letter-spacing: 1px;}
+.thumbs-container a i{padding-right: 8px; font-size: 14px;}
+
+
+
+
+
+
+.main_p .main_inner .m1{position: absolute;right: 20px; top: -40px; font-size: 2em; font-weight: lighter; display: block;color: #999;}
+
+.main_p .main_inner .m2{position: absolute; right: 116px; top: -40px; font-size: 2em; font-weight: lighter; display: block;color: #999;}
+
+.busniess{width: 100%; height: 628px; background: url("../images/main_05x2.png") center bottom no-repeat; background-size: cover; margin-top: 100px;}
+.busniess .busniess_inner{position: relative; text-align: center; padding-top: 90px;}
+.busniess .busniess_inner ol{margin-bottom: 25px;}
+.busniess .busniess_inner ol li{margin: 0 22px; display: inline-block;}
+.busniess .busniess_inner ol li dt{font-family : 'Arial', sans-serif; font-size: 23px; font-weight: 800; color: #333;}
+.busniess .busniess_inner ol li dd{font-size: 60px; margin-top: 5px; font-weight: bold; color: #fff;}
+.busniess .busniess_inner p{font-family : 'Nanum Gothic', sans-serif;}
+.busniess .busniess_inner .title{font-size: 24px; margin-bottom: 50px; font-weight: 800; padding: 0 40px 0 40px; line-height: 1.5em;}
+.busniess .busniess_inner .txt{font-size: 16px; color: rgba(255,255,255,0.8); line-height: 1.8em; padding: 0 40px 0 40px;}
+.busniess .busniess_inner .animore{margin-top: 40px;}
+.busniess .busniess_inner .animore a{width: 150px; color: #ddd; font-family : 'Nanum Gothic', sans-serif; font-weight: 700; height: 50px; line-height: 50px; font-size: 16px; border: 2px solid #ddd; display: block; margin: auto;  z-index: 1; text-align: center;}
+
+
+
+
+
+
+.rad{margin-top: 100px;}
+
+.rad h3{font-family : 'Arial', sans-serif; font-size: 2.875em; font-weight: 800; color: rgb(0,105,171); position: relative; text-align: right; margin-right: 40px; margin-bottom: 80px;}
+.rad h3 span{color: #f1871e;}
+.rad h3::after{content: ''; display: block; width: 105px; height: 2px; background: rgb(0,105,171); position: absolute; top: 80px; right: -40px;}
+.rad .rad_inner{border: 1px solid #ccc; box-sizing: border-box;}
+.rad .rad_inner li{position: relative;}
+
+
+
+
+
+
+
+.rad .rad_inner .box ul{overflow: hidden; width: 100%;}
+.rad .rad_inner .box ul li span{width: 50%; height: 250px; text-indent: -9999px; overflow: hidden;}
+.rad .rad_inner .box ul li dl{width: 50%; height: 250px; font-family : 'Nanum Gothic', sans-serif;  background: #fff;}
+
+.rad .rad_inner .box ul li dt{text-align: center; margin: 10% 0 15px 10px; font-weight: 800; font-size: 20px;}
+.rad .rad_inner .box ul li dd{text-align: justify; margin: 0 15px; line-height: 1.5em}
+
+
+.rad .rad_inner .con1 ul li span{float: left; background: url(../images/main_06x2.png) center no-repeat;  background-size: cover;}
+.rad .rad_inner .con1 ul li dl{ float: right;}
+
+.rad .rad_inner .con2 ul li span{float: right; background: url(../images/main_07x2.png) center no-repeat;  background-size: cover;}
+.rad .rad_inner .con2 ul li dl{float: left;}
+
+.rad .rad_inner .con3 ul li span{float: left; background: url(../images/main_08x2.png) center no-repeat;  background-size: cover;}
+.rad .rad_inner .con3 ul li dl{float: right;}
+
+.rad .rad_inner .con4 ul li span{float: right; background: url(../images/main_09x2.png) center no-repeat;  background-size: cover;}
+.rad .rad_inner .con4 ul li dl{float: left;}
+
+.rad .rad_inner li dl{}
+.notice{margin-top: 100px;}
+.notice h3{font-family : 'Arial', sans-serif; font-size: 2.875em; font-weight: 800; color: rgb(0,105,171); position: relative; text-align: center; margin-bottom: 50px;}
+.notice h3 span{color: #f1871e;}
+.notice h3::after{content: ''; display: block; width: 100%; height: 2px; background: rgb(0,105,171); position: absolute; top: 102px;}
+

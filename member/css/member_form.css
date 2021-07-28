@@ -1,0 +1,89 @@
+#content{} 
+
+.inner{
+width: 900px;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+margin-top: 70px;
+}
+.inner .top_us{overflow: hidden; padding-top: 30px; margin-bottom: -60px;}
+#content .top_us h3{font-family: 'Nanum Gothic', sans-serif; font-size: 50px; color: #00588a; font-weight: 800; position: relative; padding-bottom: 80px; float: left;text-transform: uppercase;}
+#content .top_us .logo{
+width: 150px;
+height: 54px;
+display: block;
+float: right; 
+text-indent: -9999px;
+background: url(../../common/images/us_logo.png) 0 0 no-repeat;
+}
+.join_notice li{font-family: 'Nanum Gothic', sans-serif; font-size: 15px; margin: 10px 0}
+.join_notice>li>span{text-decoration: underline}
+#content .inner form{
+margin-bottom: 100px; border: 3px solid #00588a; border-radius: 15px;
+padding: 50px 30px;
+}
+#content .inner  .list_wrap{border: 1px solid #efefef;}
+
+
+#content .inner  .form_row{overflow: hidden;border-bottom: 1px solid #efefef;background: #fff;} 
+#content .inner  .form_row li{float: left;}
+#content .inner  .form_row.pw{background: #fff url(../images/pw_icon.jpg) 96% center no-repeat;}
+#content .inner  .form_row.pw_check{background: #fff url(../images/pw_check_icon.jpg) 96.8% center no-repeat;}
+#content .inner  .form_row .tit{width: 160px;background: #f9f9f9;border-right: 1px solid #efefef;}
+#content .inner  .form_row .margin_25{margin: 25px;}
+#content .inner  .form_row .tit,#content .form_row .tit label{font-size: 16px;font-weight: 600;padding: 25px 0;position: relative; font-family: 'Arial', sans-serif; }
+#content .inner  .form_row .tit label{margin-left: 20px;}
+#content .inner  .push_15_t{margin-top: 15px;}
+#content .inner  .form_row .tit span{position: relative;margin-left: 20px;}
+#content .inner  .form_row .tit label::after,#content .form_row .tit span::after{content: '';display: block; position: absolute; left: 0px;top: 0px; color: #00588a; width: 10px; height: 10px; border-radius: 50%;}
+#content .inner  .form_row .tit span::after{top: 0px;}
+#content .inner  .list_wrap input,#content select{padding: 15px 20px;margin: 12px 20px;background: #f9f9f9;border: 0;outline: none;}
+#content .inner  #loadtext span,#content #loadtext2 span{position: relative;right: -220px;    font-size: 12px;}
+#content .inner  .tel input,#content .email input{padding: 15px 20px;margin: 12px;background: #f9f9f9;border: 0;outline: none;}
+#content .inner  .tel .border-r-1{border-right: 1px solid #efefef;}
+
+/* #content .inner label::after{width: 8px; height: 8px; content: ''; border-radius: 4px; background: #004b84; position: absolute; top: 35px; left: 10px}
+#content .inner label{display: inline-block; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; font-size: 20px; margin: 0 30px; width: 150px; }
+
+
+
+#content .inner form>ul>li{padding: 15px 0; border-bottom: 1px solid #ccc; position: relative}
+#content .inner form>ul>li:last-child{border-bottom: none}
+
+#content .inner form ul li input{font-family: 'Nanum Gothic', sans-serif; border: none; background: #eaebef; padding: 5px; height: 40px; width: 400px; font-size: 16px}
+
+#content .inner form>ul>li:nth-child(6) input{width: 100px}
+#content .inner form>ul>li:nth-child(7) input{width: 200px}
+
+#content .inner select{font-family: 'Nanum Gothic', sans-serif; border: none; background: #eaebef; height: 50px; width: 100px; font-size: 18px}
+
+#content .inner form>ul>li:last-child{margin-top: 80px}
+#content .inner form>ul>li:last-child ul{overflow: hidden} */
+
+
+
+
+
+#content .inner  .button{overflow: hidden;margin-top: 50px;}
+
+
+
+
+
+#content .inner  .button li{float: left;margin-right: 25px;}
+#content .inner  .button li:nth-of-type(2){margin-right: 0;}
+
+
+
+
+
+#content .inner  .button a{display: block;text-align: center;font-size: 18px;font-weight: 600; padding: 19px 0;}
+#content .inner  .button .join_btn,#content .button .reset_btn{width: 48%;}
+#content .inner  .button .join_btn{background: #00588a; transition: all .3s ease-out; }
+#content .inner  .button .join_btn a{color: #f0f0f0;}
+#content .inner  .button .join_btn:hover{background: #f1871e; }
+#content .inner  .button .join_btn.modify{width: 666px;}
+#content .inner  .button .reset_btn{background: #333;}
+#content .inner  .button .reset_btn a{color: #f0f0f0;}
+        

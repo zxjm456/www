@@ -1,0 +1,148 @@
+.log_inner{width: 100%; height: 100%; background: url(../../common/images/sub_join.png) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;padding-top: 75px; padding-bottom: 75px;}
+
+    
+    .inner{
+        background: #f0f0f0;
+        border: 3px solid #0069ab;
+        width: 600px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+padding: 60px 30px;
+    }
+    .log_inner .login_top{overflow: hidden; padding-top: 30px}
+.log_inner h2{font-family: 'Arial', sans-serif; font-size: 50px; color: #0069ab; font-weight: 700; position: relative; margin-bottom: 60px; float: left;}
+.log_inner .form_logo{display: block; width: 150px; height: 54px; background: url(../us_logo.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; float: right;}
+
+.id_pw_input{width: 100%}
+
+.id_pw_input ul li{margin-bottom: 20px}
+.id_pw_input ul li input{width: 98%; font-family: 'Nanum Gothic', sans-serif; border: none; background: #eaebef; padding: 5px; height: 40px; font-size: 16px}
+
+.login_button{margin-bottom: 50px; overflow: hidden}
+.login_button input{cursor: pointer; letter-spacing: 3px; font-family: 'Arial', sans-serif;  background: #0069ab; color: #fff; padding: 5px; height: 50px; font-size: 16px; border: none; width: 47%; margin-right: 20px; float: left; transition: all .3s ease-out;}
+.login_button input:hover{color: #0069ab; background: #f1871e;}
+
+.login_button a{display: inline-block; background: #bbb; color: #fff; padding: 14.5px 5px; font-size: 16px; border: none; width: 47%; float: right; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center}
+
+
+
+.find_idpw{overflow: hidden;}
+.find_idpw li{    margin: 30px auto;
+    overflow: hidden;
+    float: left;
+    text-align: center; color: #666; font-family: 'Nanum Gothic', sans-serif; font-size: 15px;}
+    .find_idpw li i{padding-right: 8px;}
+    .find_idpw li span{margin-left: 20px;}
+    .find_idpw li:nth-of-type(2){float: right;}
+
+
+
+
+
+.join_button{overflow: hidden; position: relative;}
+
+.join_button span::before{width: 600px; height: 1px; content: ''; background: #ccc; position: absolute; top: 0; left: 0}
+.join_button span{color: #666; padding-top: 20px; display: block; font-family: 'Arial', sans-serif; font-size: 25px; font-weight: 700; margin-bottom: 10px}
+.join_button p{font-family: 'Nanum Gothic', sans-serif; font-weight: 400; color: #666; font-size: 15px; margin-bottom: 40px; line-height: 1.5;}
+
+
+.join_button a{position: absolute; right: 0; top: 50px; display: block; background: #0069ab; color: #fff; padding: 14.5px 5px; font-size: 16px; border: none; width: 47%; float: right; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center; transition: all .3s ease-out;}
+.join_button a:hover{color: #0069ab; background: #f1871e;}
+
+
+
+
+
+
+.login_banner{display: block; width: 600px; height: 210px; background: url(../banner.png);}
+.login_banner > p{font-size: 18px; color: #f0f0f0; font-family: 'Nanum Gothic', sans-serif; font-weight: 400; text-align: justify; padding-left: 15px; padding-right: 240px; padding-top: 20px; line-height: 1.5em;}
+.login_banner a.banner_more{display: inline-block; font-size: 20px; color: #f0f0f0; margin-left: 15px; margin-top: 10px; transition:  all .9s ease-out;}
+.login_banner:hover a.banner_more{transform: rotate(-360deg);}
+
+
+
+
+
+.pw_banner{display: block; width: 600px; height: 210px; background: url(../pw_banner.jpg);}
+.pw_banner > p{font-size: 18px; color: #f0f0f0; font-family: 'Nanum Gothic', sans-serif; font-weight: 400; text-align: justify; padding-left: 15px; padding-right: 240px; padding-top: 20px; line-height: 1.5em;}
+.pw_banner a.banner_more{display: inline-block; font-size: 20px; color: #f0f0f0; margin-left: 15px; margin-top: 10px; transition:  all .9s ease-out;}
+.pw_banner:hover a.banner_more{transform: rotate(-360deg);}
+
+
+
+
+
+.id_banner{display: block; width: 600px; height: 210px; background: url(../id_banner.jpg);}
+.id_banner > p{font-size: 18px; color: #f0f0f0; font-family: 'Nanum Gothic', sans-serif; font-weight: 400; text-align: justify; padding-left: 15px; padding-right: 240px; padding-top: 20px; line-height: 1.5em;}
+.id_banner a.banner_more{display: inline-block; font-size: 20px; color: #f0f0f0; margin-left: 15px; margin-top: 10px; transition:  all .9s ease-out;}
+.id_banner:hover a.banner_more{transform: rotate(-360deg);}
+
+
+/*id/pw찾기*/
+.log_inner .title{overflow: hidden; padding-top: 30px}
+.log_inner .find_txt{font-family: 'Arial', sans-serif; font-size: 50px; color: #0069ab; font-weight: 700; position: relative; margin-bottom: 60px; float: left;}
+.log_inner .find_logo{display: block; width: 150px; height: 54px; background: url(../us_logo.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; float: right;}
+
+#id_input_button .find_input{width: 98%;
+    font-family: 'Nanum Gothic', sans-serif;
+    border: none;
+    background: #eaebef;
+    padding: 5px;
+    height: 40px;
+    font-size: 16px; margin-bottom: 20px;}
+    #id_input_button .telBox #hp1{width: 20%; outline: none;}
+    #id_input_button .telBox #hp2{width: 33.5%;}
+    #id_input_button .telBox #hp3{width: 33.5%;}
+
+
+
+
+
+
+
+
+
+    #id_input_button .go{    margin-bottom: 50px;
+        overflow: hidden;}
+    #id_input_button .go input{    cursor: pointer;
+        letter-spacing: 3px;
+        font-family: 'Arial', sans-serif;
+        background: #0069ab;
+        color: #fff;
+        padding: 5px;
+        height: 50px;
+        font-size: 16px;
+        border: none;
+        width: 47%;
+        margin-right: 20px;
+        float: left;
+        transition: all .3s ease-out;}
+        #id_input_button .go input:hover{color: #0069ab; background: #f1871e;}
+    #id_input_button .go .log_go{    display: inline-block;
+        background: #bbb;
+        color: #fff;
+        padding: 14.5px 5px;
+        font-size: 16px;
+        border: none;
+        width: 47%;
+        float: right;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 16px;
+        text-align: center;}
+
+
+
+
+
+        #id_input_button .find_idpw{    font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 400;
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 30px;
+            overflow: hidden;}
+            #id_input_button .find_idpw p{float: left;}
+            #id_input_button .find_idpw a{display: block; float: left;}

@@ -1,0 +1,174 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+#content .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+.sub_overview{margin-bottom: -17px;}
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 50%; }
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.title_area .sub_overview li:nth-of-type(1) a{display: block; color: #333; font-size: 0.938em; text-align: center; padding-bottom: 30px;}
+.title_area .sub_overview li:nth-of-type(1) a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 50px 0;}
+
+#stock .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#stock .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#stock .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+#present .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#present .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#present .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+#finance .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#finance .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#finance .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+caption{display: none;}
+#stock{width: 100%;}
+#stock > p{font-family : 'Nanum Gothic', sans-serif; font-size: 1.250em; text-align: center; font-weight: 700; color: #666; line-height: 2em;}
+#stock > p span{color: #0069ab;}
+#stock .stock_inner{width: 1200px; margin: 0 auto; margin-top: 50px;}
+#stock .stock_inner .figure{padding: 50px 5%; height: 230px; border: 1px solid #e0e0e0;}
+#stock .stock_inner .figure dl{position: relative;}
+#stock .stock_inner .figure dt, #stock .stock_inner .figure dd{position: absolute;}
+#stock .stock_inner .figure .figure_t dt:nth-of-type(1){width: 50%; text-align: right; top: 3px; left: -170px}
+#stock .stock_inner .figure .figure_t dt:nth-of-type(1) > i{font-size: 38px; color: #0069ab;}
+#stock .stock_inner .figure .figure_t  dd:nth-of-type(1){font-size: 40px; font-weight: bold; color: #333; top: 0px; width: 50%; text-align: right;}
+#stock .stock_inner .figure .figure_t dt:nth-of-type(2){top:1px; left: 55%; text-align: left; color: #666;}
+#stock .stock_inner .figure .figure_t dd:nth-of-type(2){top: 1px; left: 62%; text-align: right; color: #0069ab;}
+#stock .stock_inner .figure .figure_t dd:nth-of-type(2) > i{font-size: 20px; padding-right: 3px; color: #0069ab;}
+#stock .stock_inner .figure .figure_t dt:nth-of-type(3){top: 25px; left: 55%; text-align: left; color: #666;}
+#stock .stock_inner .figure .figure_t dd:nth-of-type(3){top: 25px; left: 62%; text-align: right; color: #0069ab;}
+#stock .stock_inner .figure .figure_b{top: 120px; border-top: 2px solid #333;}
+#stock .stock_inner .figure .figure_b > dt{font-size: 17px; font-weight: bold; color: #333;}
+#stock .stock_inner .figure .figure_b > dt , #stock .stock_inner .figure .figure_b > dd{width: 25%; padding: 20px 0 20px 0; text-align: center;border-bottom: 1px solid #e0e0e0;}
+#stock .stock_inner .figure .figure_b dt:nth-of-type(1){left: 0;}
+#stock .stock_inner .figure .figure_b dd:nth-of-type(1){top: 55px; left: 0;}
+#stock .stock_inner .figure .figure_b dt:nth-of-type(2){left: 25%;}
+#stock .stock_inner .figure .figure_b dd:nth-of-type(2){top: 55px; left: 25%;}
+#stock .stock_inner .figure .figure_b dt:nth-of-type(3){left: 50%;}
+#stock .stock_inner .figure .figure_b dd:nth-of-type(3){top: 55px; left: 50%;}
+#stock .stock_inner .figure .figure_b dt:nth-of-type(4){left: 75%;}
+#stock .stock_inner .figure .figure_b dd:nth-of-type(4){top: 55px; left: 75%;}
+#stock .stock_inner .stock_box{margin-top: 100px;}
+#stock .stock_inner .stock_box ul{overflow: hidden;}
+#stock .stock_inner .stock_box ul li.kospi{float: left; width: 32%; margin-left: 2%; padding: 50px 0; background: #f4f4f4; text-align: center;}
+#stock .stock_inner .stock_box ul li.kosdaq{float: left; width: 32%; margin-left: 2%; padding: 50px 0; background: #f4f4f4; text-align: center;}
+#stock .stock_inner .stock_box ul li.chemical{float: left; width: 32%; margin-left: 2%; padding: 47px 0; background: #f4f4f4; text-align: center;}
+#stock .stock_inner .stock_box ul li.kospi{margin-left: 0%;}
+#stock .stock_inner .stock_box ul li dt{font-size: 30px; font-weight: bold; text-transform: uppercase; color: #333; font-family: Arial,sans-serif;}
+#stock .stock_inner .stock_box ul li.chemical dt{font-family:  'Nanum Gothic', sans-serif;}
+#stock .stock_inner .stock_box li dd:nth-of-type(1){padding-top: 20px; font-size: 25px; font-weight: bold; color: #333;}
+#stock .stock_inner .stock_box li.kospi dd:nth-of-type(2){padding: 10px 0; color: #666;}
+#stock .stock_inner .stock_box li.kosdaq dd:nth-of-type(2){padding: 10px 0; color: #666;}
+#stock .stock_inner .stock_box li.chemical dd:nth-of-type(2){padding: 10px 0; color: #666;}
+#stock .stock_inner .stock_box li.kospi dd:nth-of-type(2) > i{color: rgb(173, 0, 0); font-size: 20px; margin-right: 6px;}
+#stock .stock_inner .stock_box li.kosdaq dd:nth-of-type(2) > i{color: #0069ab; font-size: 20px; margin-right: 6px;}
+#stock .stock_inner .stock_box li.chemical dd:nth-of-type(2) > i{color: #0069ab; font-size: 20px; margin-right: 6px;}
+#stock .stock_inner .chart{ margin: 100px 0 0 40px;}
+
+
+#stock .stock_inner .chart .graph{margin: 0 auto; padding-left: 100px;}
+
+
+
+
+
+#stock .stock_inner .chart .graph p{margin-left: -75px; padding-top: 5px; font-size: 20px; color: #333; font-weight: 800; font-family:  'Nanum Gothic', sans-serif; position: relative;}
+#stock .stock_inner .chart .graph p span{color: #0069ab;}
+#stock .stock_inner .chart .graph p::after{content: ''; position: absolute; top: 8px; left: -30px; width: 15px; height: 15px; border: 2px solid #0069ab; transform: rotate(45deg);}
+#stock .stock_inner .chart ul li div{margin-top: 70px; height: 370px;}
+#stock .stock_inner .chart .chart_table{padding: 33px 6%;}
+#stock .stock_inner .chart .chart_table table{border-top: 2px solid #0069ab; font-size: 14px; }
+#stock .stock_inner .chart .chart_table caption{display: none;}
+#stock .stock_inner .chart .chart_table table th{border-right: 1px solid #f0f0f0;}
+#stock .stock_inner .chart .chart_table table td{color: #666;}
+#stock .stock_inner .chart .chart_table table th, #stock .stock_inner .chart .chart_table table td{width: 25%; text-align: center; padding: 15px 62px; border-bottom: 1px solid #f0f0f0;}
+#stock .stock_inner .chart .chart_table table td:nth-of-type(1){border-right: 1px solid #f0f0f0;}
+#stock .stock_inner .chart .chart_table table td:nth-of-type(2){border-right: none;}
+#stock .stock_inner .chart .chart_table table .won_b{font-weight: bold; color: #333;}
+#stock .stock_inner .chart .chart_table table .week_b{font-weight: bold; color: #0069ab;}
+#stock .stock_inner .chart .chart_table table .week_w{font-weight: bold; color:rgb(173, 0, 0);}
+
+
+
+#present{width: 100%; margin-bottom: 150px;}
+#present .present_inner{width: 1200px; margin: 0 auto;}
+#present .present_inner h4{font-size: 24px; color: #333; font-weight: 800; font-family: 'Nanum Gothic', sans-serif; padding-left: 32px; position: relative; margin: 80px 0 30px;}
+#present .present_inner h4::after{content: '';   display: block; width: 15px; height: 15px; border: 2px solid #0069ab; transform: rotate(45deg); position: absolute; top: 4px; left: 2px;}
+#present .present_inner .con2{border-top: 2px solid #0069ab; position: relative;}
+/* #present .present_inner p{text-align: right; font-size: 15px; color: #999; position: absolute; top: -45px; right: 0;} */
+
+
+
+
+/*발행현황*/
+#present .present_inner .publish table{width: 100%;}
+#present .present_inner .publish_inner > p{text-align: right; font-size: 15px; color: #999; position: absolute; top: -45px; right: 0;}
+#present .present_inner .publish table thead{}
+#present .present_inner .publish table thead tr{}
+#present .present_inner .publish table thead th{font-size: 18px; text-align: center; color: #000; font-weight: bold; padding: 20px 0; border-bottom: 1px solid #f0f0f0; border-right: 1px solid #f0f0f0;  background: #f3ece7;}
+#present .present_inner .publish table thead th:nth-of-type(3){border-right: none;}
+#present .present_inner .publish table tbody{}
+#present .present_inner .publish table tbody td{padding: 20px 10px; color: #666; border-bottom: 1px solid #f0f0f0; text-align: center; border-right: 1px solid #f0f0f0;}
+#present .present_inner .publish table tbody td:nth-of-type(4){border-right: none;}
+#present .present_inner .publish table tfoot{}
+#present .present_inner .publish table tfoot td{padding: 20px 10px; color: #333; border-bottom: 1px solid #f0f0f0;font-weight: bold; text-align: center;border-right: 1px solid #f0f0f0;}
+#present .present_inner .publish table tfoot td:nth-of-type(3){border-right: none;}
+
+
+
+/*현황*/
+#present .present_inner .current table {width: 100%;}
+#present .present_inner .current_inner > p{text-align: right; font-size: 15px; color: #999; position: absolute; top: -45px; right: 0;}
+#present .present_inner .current table thead{}
+#present .present_inner .current table thead th{font-size: 18px; color: #333; font-weight: bold; padding: 20px 0; border-bottom: 1px solid #f0f0f0; border-right: 1px solid #f0f0f0; background: #f3ece7;}
+#present .present_inner .current table thead th:nth-of-type(5){border-right: none;}
+#present .present_inner .current table tbody{}
+#present .present_inner .current table tbody td{padding: 20px 10px;  color: #666;border-bottom: 1px solid #f0f0f0; text-align: center; border-right: 1px solid #f0f0f0;}
+#present .present_inner .current table tbody td:last-child{border-right: none;}
+#present .present_inner .current table tfoot{}
+#present .present_inner .current table tfoot td{padding: 20px 10px; border-bottom: 1px solid #e0e0e0; color: #333; font-weight: bold; text-align: center; border-right: 1px solid #f0f0f0;}
+#present .present_inner .current table tfoot td:last-child{border-right: none;}
+
+
+#present .present_inner .composition_inner > p{text-align: right; font-size: 15px; color: #999; position: absolute; top: -45px; right: 0;}
+
+
+
+#present .present_inner .composition_inner .circle_t{overflow: hidden; width: 1000px; height: 140px; margin: 0 auto;}
+#present .present_inner .composition_inner .circle_t li{float: left; margin-right: 70px; margin-top: 50px; width: 180px; height: 180px; background: #0069ab; border-radius: 50%; position: relative;}
+#present .present_inner .composition_inner .circle_t li::after{content: ''; width: 160px; height: 160px; border: 2px solid #f3ece7; border-radius: 50%; position: absolute; top: 7px; left: 8px;}
+#present .present_inner .composition_inner .circle_t li:nth-of-type(4){margin-right: 0px;}
+#present .present_inner .composition_inner .circle_t li:nth-of-type(1){margin-left: 35px;}
+#present .present_inner .composition_inner .circle_t li p{color: #f3ece7; font-weight: bold; padding-top: 55px; padding-left: 25px;}
+
+#present .present_inner .composition_inner .undeer_line{width: 1000px; height: 3px; border-radius: 5px; background: #0069ab; margin:  0 auto; margin-top: 5px;}
+
+#present .present_inner .composition_inner .percent_inner{overflow: hidden; width: 1000px; margin:  0 auto;}
+#present .present_inner .composition_inner .percent_inner li{float: left; padding-right: 205px;margin-top:  -15px;}
+#present .present_inner .composition_inner .percent_inner li:nth-of-type(4){padding-right: 0px;}
+#present .present_inner .composition_inner .percent_inner li:nth-of-type(1){margin-left: 106px;}
+#present .present_inner .composition_inner .percent_inner li p{color: #0069ab; font-weight: bold; font-size: 15px; margin-left: -9px; margin-top: -5px;}
+#present .present_inner .composition_inner .percent_inner li i{font-size: 50px; color: #0069ab;}
+
+
+
+
+
+/*general*/
+#present .present_inner .general_inner > p{text-align: right; font-size: 15px; color: #999; position: absolute; top: -45px; right: 0;}
+#present .present_inner .general_inner table{width: 100%;}
+
+#present .present_inner .general_inner table thead{}
+#present .present_inner .general_inner table thead tr{}
+#present .present_inner .general_inner table thead th{font-size: 18px; color: #333; font-weight: bold; padding: 20px 0; border-bottom: 1px solid #f0f0f0; border-right: 1px solid #f0f0f0; background: #f3ece7;}
+#present .present_inner .general_inner table tbody{}
+#present .present_inner .general_inner table tbody tr{}
+#present .present_inner .general_inner table tbody td{padding: 20px 10px;  color: #666;border-bottom: 1px solid #f0f0f0; text-align: center; border-right: 1px solid #f0f0f0;}
+#present .present_inner .general_inner table tbody td:last-child{border-right: none;}
+

@@ -1,0 +1,10 @@
+.content_area{width: 1200px; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif;}
+.content_area #view_title{font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;}
+    .content_area #view_content{padding: 50px 20px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;
+        line-height: 2em;
+        text-align: justify;}

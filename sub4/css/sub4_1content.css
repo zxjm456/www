@@ -1,0 +1,53 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+#content .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+.title_area .sub_overview ul::before{content: ''; width: 2000px; height: 1px; background: #666; position: absolute; top: 63.9%; z-index: -2;}
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 33.3%; }
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.title_area .sub_overview li:nth-of-type(1) a{display: block; color: #333; font-size: 0.938em; text-align: center; padding-bottom: 30px;}
+.title_area .sub_overview li:nth-of-type(1) a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.content_area{margin-top: 150px; width: 100%;}
+.content_area .ir_inner{width: 1200px; margin: 0 auto; text-align: center;}
+
+
+.content_area .ir_inner p{font-family : 'Nanum Gothic', sans-serif;}
+.content_area .ir_inner p:nth-of-type(1){color: #0069ab; font-size: 25px; font-weight: 800; padding: 0px 150px 10px 150px;}
+.content_area .ir_inner p:nth-of-type(2){font-size: 20px; color: #666; padding: 0px 100px 0 100px;}
+
+
+.content_area .ir_circle{width: 1200px; height: 350px; margin: 0 auto; margin-top: 100px; position: relative; margin-bottom: 150px;}
+.content_area .ir_circle > p{text-align: center; font-size: 25px; color: #333; font-family : 'Nanum Gothic', sans-serif; font-weight: 800; padding-top: 45px;}
+.content_area .ir_circle .circle{text-indent: -9999px; overflow: hidden; width: 350px; height: 350px; background: url(../images/content1/circle.png) no-repeat; position: absolute; top: 0; left: 50%; margin-left: -175px; z-index: -3;}
+.content_area .ir_circle ul{overflow: hidden; padding-left: 272px; padding-top: 35px;}
+.content_area .ir_circle li{float: left;}
+.content_area .ir_circle li p{text-align: center; font-size: 18px; color: #0069ab; font-family: 'Nanum Gothic', sans-serif; font-weight: 800; margin-top: 128px;}
+
+.content_area .ir_circle .con1{width: 180px; height: 180px; border-radius: 50%; background: #fff url(../images/content1/founders.png) 47px 20px no-repeat; border: 1px solid #0069ab; margin-right: 50px; transition: all .3s ease-out;}
+.content_area .ir_circle .con1:hover{background: #0069ab url(../images/content1/founders_b.png) 47px 20px no-repeat;}
+.content_area .ir_circle .con1:hover p{color: #fff;}
+
+.content_area .ir_circle .con2{width: 180px; height: 180px; border-radius: 50%; background: #fff url(../images/content1/finance.png) 47px 20px no-repeat; border: 1px solid #0069ab; margin-right: 50px; transition: all .3s ease-out;}
+.content_area .ir_circle .con2:hover{background: #0069ab url(../images/content1/finance_b.png) 47px 20px no-repeat;}
+.content_area .ir_circle .con2:hover p{color: #fff;}
+
+
+.content_area .ir_circle .con3{width: 180px; height: 180px; border-radius: 50%; background: #fff url(../images/content1/network.png) 47px 20px no-repeat; border: 1px solid #0069ab; transition: all .3s ease-out;}
+.content_area .ir_circle .con3:hover{background: #0069ab url(../images/content1/network_b.png) 47px 20px no-repeat;}
+.content_area .ir_circle .con3:hover p{color: #fff;}
+
+.content_area .ir_txt{width: 1200px; margin: 0 auto; padding: 0px 15%; margin-bottom: 150px;}
+
+.content_area .ir_txt dl{overflow: hidden;}
+.content_area .ir_txt dl dt{width: 220px; float: left; padding: 38px 0; text-align: center; border-top: 2px solid #0069ab; font-size: 27px;  font-family : 'Nanum Gothic', sans-serif; font-weight: 800; color: #0069ab;}
+.content_area .ir_txt dd{width: 700px; float: left; padding: 20px 0; margin-left: 60px; border-top: 2px solid #f0f0f0; line-height: 1.5em; text-align: justify; color: #666;}
+.content_area .ir_txt dd:nth-of-type(2){border-top: none; padding: 0px; padding-bottom: 20px;}

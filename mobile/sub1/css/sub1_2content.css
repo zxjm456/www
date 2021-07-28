@@ -1,0 +1,90 @@
+
+/*파란불*/
+.sub_menu li.ceo a{background: #0069ab; color: #fff;}
+.sub_menu li a{display: block; position: relative; font-size: 16px; color: #888; line-height: 48px;}
+.sub_menu li.ceo a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 24px;}
+.sub_menu li.ceo a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 24px;}
+
+.tabs{margin-bottom: -17px; position: relative;}
+.tabs .active{color: #0069ab;}
+.tabs::after{content: ''; width: 100%; height: 1px; background: #0069ab; position: absolute; top:30px;}
+.tabs .tab_inner{overflow: hidden; margin-top: 60px; position: relative;}
+.tabs .tab_inner a{float: left; width: 33.3%;display: block;  font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s}
+ 
+.tabs .active::after{content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #0069ab;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    margin-left: -8px; z-index: 5;
+   border-radius: 50%;}
+
+
+
+/*page h3*/
+.page1 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; text-align: right; margin-right: 40px; margin-top: 40px;}
+.page1 h3::after{    content: ''; display: block; width: 140px; height: 3px; background: #8fcaca; position: absolute; top: 40px; right: -75px;}
+.page2 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; text-align: center; margin-top: 30px;}
+.page2 h3::after{content: ''; display: block; width: 100%; height: 3px; background: #8fcaca; position: absolute; top: 50px;}
+.page3 h3{font-size: 2em;font-family : 'Arial', sans-serif; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-left: 40px; margin-top: 30px;}
+.page3 h3::after{    content: ''; display: block; width: 140px; height: 3px; background: #8fcaca; position: absolute; top: 50px; left: -75px;}
+
+.page1{height: 1580px;}
+
+.page3{height: 1000px;}
+
+/*page1*/
+.page1 .philoso_inner{margin-top: 90px;}
+.page1 .philoso_inner .inner_bg{display: block; width: 100%; height: 280px; background: url(../images/pilosophy.png) center bottom no-repeat; background-size: cover; position: relative;}
+.page1 .philoso_inner .inner_bg::after{content: ''; position: absolute; top: 120%; left: 0; width: 100%; height: 3px; background:#999;}
+.page1 .philoso_inner .inner_bg p{display: block; text-align: center; color: #f0f0f0; font-family:  'Nanum Gothic', sans-serif; line-height: 1.5em; font-weight: 700; font-size: 18px; padding: 50px 20px;}
+.page1 .philoso_inner .inner_bg p span{color: #3bb4ff;}
+
+.page1 .philoso_inner .philoso_txt{position: relative; margin: 80px 15px; box-sizing: border-box;}
+
+.page1 .philoso_inner .philoso_txt dl{padding: 25px 0; border-bottom: 1px solid #ddd; font-family:  'Nanum Gothic', sans-serif;}
+.page1 .philoso_inner .philoso_txt dl:nth-of-type(5){border-bottom: none;}
+.page1 .philoso_inner .philoso_txt dl dt{margin-bottom: 10px; font-weight: 600; font-size: 20px;}
+.page1 .philoso_inner .philoso_txt dl dd{position: relative; padding-left: 14px; margin-bottom: 5px; font-size: 15px; color: #666666; line-height: 1.5em;}
+.page1 .philoso_inner .philoso_txt dl dd::before{ content: ''; position: absolute; left: 0; top: 13px; width: 4px; height: 4px; border-radius: 50%; background: #f1871e; overflow: hidden;}
+
+/*page2*/
+.page2{font-family:  'Nanum Gothic', sans-serif; margin-bottom: 80px;}
+.page2 .ceo_inner{}
+.page2 .ceo_inner p.ceo_1{font-weight: 800; font-size: 19px; text-align: justify; margin: 80px 8% 40px 8%; line-height: 1.5;}
+.page2 .ceo_inner p.ceo_1 span{color: #0069ab;}
+.page2 .ceo_inner img{width: 100%;}
+.page2 .ceo_inner p.ceo_2{display: block; text-align: right; color: #666; font-size: 14px; margin: -30px 10px 0 0;}
+.page2 .ceo_inner dl{margin: 50px 5% 0 5%; text-align: justify;}
+.page2 .ceo_inner dl span{color: #f1871e;}
+.page2 .ceo_inner dl dt{font-size: 18px; font-weight: 700; color: #333; line-height: 1.5em; margin-bottom: 30px;}
+.page2 .ceo_inner dl dd{font-size: 16px; font-weight: 400; color: #666; line-height: 1.5em; margin-bottom: 50px;}
+.page2 .ceo_inner dl dd:last-child{margin-bottom: 0px;}
+
+
+/*page3*/
+.page3 .local_inner{margin: 90px 0 80px 0;}
+.page3 .local_inner #map{display: block; width: 90%; height: 350px; margin: 0 5% 80px; border-radius: 15px;}
+.page3 .local_inner .info{width: 90%; margin: 0 5%; position: relative;}
+.page3 .local_inner .info ul{width: 100%;}
+.page3 .local_inner .info ul li{width: 85%; padding: 0 8%;}
+.page3 .local_inner .info ul li:nth-of-type(1){margin-bottom: 50px;}
+.page3 .local_inner .info ul li dl{    color: #666;
+text-align: left;
+text-transform: uppercase;}
+.page3 .local_inner .info ul li dt{
+font-family: 'Arial', sans-serif;
+font-size: 18px;
+font-weight: 700;
+position: relative;
+margin-bottom: 35px;}
+.page3 .local_inner .info ul li dt::after{    content: '';
+display: block;
+width: 5px; height: 5px; background: #0069ab;; position: absolute; top: 35%; left: -3%;}
+.page3 .local_inner .info ul li dd{font-family: 'Nanum Gothic', sans-serif;
+font-weight: 400;
+margin-bottom: 15px;
+line-height: 1.9em;}

@@ -1,0 +1,198 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.sub_overview{margin-bottom: -17px;}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 50%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+
+
+
+
+
+/*sticky 메뉴 */
+#content .title_area .sub_overview.menu_sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0069ab;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky ul{
+    width: 1200px;
+    margin: 0 auto; 
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a{
+    color: #fff;
+    padding: 25px 0;
+    font-size: 1.429em;
+    font-family:  'Nanum Gothic', sans-serif; font-weight: 700;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a::after{
+    display: none;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky .spy{
+    background: #fff;
+    color: #0069ab;
+    z-index: 200;
+}
+/*sticky 메뉴 end*/
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 50px 0;}
+
+#intro .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#intro .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#intro .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#substance .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 36px; left:49.5%; transform: rotate(45deg);}
+#substance .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#substance .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+
+#intro{width: 100%;}
+#intro .intro_inner{width: 1200px; margin: 0 auto;  margin-bottom: 150px; position: relative;}
+#intro .intro_inner p{font-size: 20px; font-weight: bold; text-align: justify; line-height: 1.8em; font-family : 'Nanum Gothic', sans-serif; color: #333;  position: absolute; right: -269px; top: 95px; margin: 0 300px 0 700px;}
+#intro .intro_inner p span{color: #0069ab;}
+#intro .intro_inner .intro_logo{opacity: .2; position: absolute; top: 300px; right: 40px;}
+#intro .intro_inner ul{ overflow: hidden;}
+#intro .intro_inner li{float: left;}
+#intro .intro_inner li .white_t_l, .white_t_r{ width: 400px; position: relative; left: 80px; background: rgb(247, 247, 247); text-align: center; padding: 30px 94px; box-sizing: border-box; margin-top: -130px;}
+
+#intro .intro_inner li .white_b_l, .white_b_r{ width: 400px; position: relative; left: 140px; background: rgb(247, 247, 247); text-align: justify; padding: 30px 94px; box-sizing: border-box; margin-top: -130px;}
+#intro .intro_inner ul li:hover img{  box-shadow:12px 15px 32px 0px rgba(117,117,117,0.86);}
+#intro .intro_inner ul .t_l img{margin-top: 100px; margin-left: 80px; border-radius: 0 50px 0 0; transition: all .3s ease-out;}
+
+#intro .intro_inner ul .b_l img{margin-top: 500px; margin-left: 140px; border-radius: 0 50px 0 0; transition: all .3s ease-out;}
+
+#intro .intro_inner ul .t_r img{margin-top: -300px; margin-left: 80px; border-radius: 0 50px 0 0; transition: all .3s ease-out;}
+
+#intro .intro_inner ul .b_r img{margin-top: 80px; margin-left: 140px; border-radius: 0 50px 0 0; transition: all .3s ease-out;}
+
+#intro .intro_inner li dl{ position: relative;}
+#intro .intro_inner li dl dt{color: #0069ab; font-weight: bold; margin-bottom: 10px; font-size: 22px; font-family : 'Nanum Gothic', sans-serif; text-align: center;}
+#intro .intro_inner li dl dd{color: #999; line-height: 1.5em; margin-bottom: 20px; text-align: center;}
+#intro .intro_inner li dl dd:nth-of-type(1){font-weight: bold; color: #333; border-bottom: 1px solid #999; padding-bottom: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+#intro .core .title{font-size: 20px; font-weight: bold; text-align: justify; line-height: 1.8em; font-family : 'Nanum Gothic', sans-serif; color: #333; margin-right: 570px; margin-top: -280px;}
+#intro .core .title span{color: #0069ab;}
+#intro .core{width: 1200px; margin: 0 auto; height: 1000px;}
+#intro .core .core_inner{position: relative; margin-top: 130px;}
+#intro .core .core_inner .center{width: 1200px; margin: 0 auto;}
+#intro .core .core_inner .center .center_inner{background: #fff;  width: 560px; height: 560px; border-radius: 50%; position: absolute; top: 20px; left: 50%; margin-left: -283px; text-align: center; border: 5px solid #0069ab;}
+#intro .core .core_inner .center .center_inner::before{content: ''; width: 650px; height: 200px; border-radius: 50%; border: 2px dotted #F96464; position: absolute; top: 190px; left: 22%; margin-left: -174px; animation: rogbaa 10s linear infinite;}
+@keyframes rogbaa {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#intro .core .core_inner .center .center_inner::after{content: ''; width: 650px; height: 200px; border-radius: 50%; border: 2px dotted #F96464; position: absolute; top: 190px; left: 22%; margin-left: -174px; animation: baa 10s linear infinite;}
+@keyframes baa {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+#intro .core .core_inner .center .center_inner .txt{margin-top: 240px;}
+#intro .core .core_inner .center .center_inner p{font-size: 20px; color: #ff968a; font-weight: bold; padding-top: 20px;}
+#intro .core .core_inner .center .center_inner strong{color: #0069ab; font-size: 50px; text-transform: uppercase; letter-spacing: 5px; font-family : 'Nanum Gothic', sans-serif; font-weight: 700; padding-top: 20px;}
+#intro .core .core_inner ul{position: relative;}
+
+
+
+
+#intro .core .core_inner li p{font-weight: bold; color: #0069ab; text-align: center;}
+#intro .core .core_inner li dt{font-size: 18px; color: #666; font-weight: bold; text-align: center; margin-top: 6px;}
+#intro .core .core_inner li dd{font-size: 14px; color: #999; margin-top: 40px; line-height: 1.8em;}
+
+#intro .core .core_inner .digital{margin: 80px 960px 0 28px; text-align: right;}
+#intro .core .core_inner .box{margin: -230px 28px 0 960px;}
+#intro .core .core_inner .seadyke{margin: 230px 0 0 960px;}
+#intro .core .core_inner .cement{margin: -210px 960px 0 28px; text-align: right;}
+#intro .core .core_inner li{float: left;}
+
+
+
+#intro .core .core_inner li .digital_bg{position: absolute; top: 0; left: 105px;}
+#intro .core .core_inner li .box_bg{position: absolute; top: 0px; right: 92px;}
+#intro .core .core_inner li .seadyke_bg{position: absolute; top: 490px; right: 92px;}
+#intro .core .core_inner li .cementtruck_bg{position: absolute; top: 503px; left: 105px;}
+
+
+
+
+
+#intro .core .core_inner .digital span{width: 180px; height: 180px; border: 1px solid #F96464; border-radius: 50%; position: absolute; top: -25px; left: 48px;}
+#intro .core .core_inner .box span{width: 180px; height: 180px; border: 1px solid #F96464; border-radius: 50%; position: absolute; top: -15px; right: 34px;}
+#intro .core .core_inner .seadyke span{width: 180px; height: 180px; border: 1px solid #F96464; border-radius: 50%; position: absolute; top: 473px; right: 34px;}
+#intro .core .core_inner .cement span{width: 180px; height: 180px; border: 1px solid #F96464; border-radius: 50%; position: absolute; top: 470px; left: 48px;}
+
+
+
+#substance{width: 100%;}
+#substance p{font-size: 1.250em; text-align: center; line-height: 2em; font-weight: 600; margin-bottom: 60px; letter-spacing: 1px; color: #333;  margin-left: 250px; margin-right: 250px;}
+#substance p span{color: #0069ab;}
+#substance .substance_inner{height: 1500px;}
+#substance .substance_inner ul{overflow: hidden;}
+#substance .substance_inner li{ }
+#substance .substance_inner .inner_right{}
+
+#substance .substance_inner .inner_right .img_wrapper1{width: 50%; height: 1500px; float: left; display: block; overflow: hidden; background: url(../images/content2/con1.png)left center no-repeat;  background-attachment: fixed; position: sticky;}
+#substance .substance_inner .inner_left{width: 50%; float: right; height: 1500px; background: #003455; color: #fff;position: relative;}
+#substance .substance_inner .inner_left .txt1{margin-top: 150px; height: 300px; margin-bottom: 0; padding-left: 200px;}
+#substance .substance_inner .inner_left .txt1::after{content: ''; width: 15px; height: 15px; border-radius: 50%; background: #999; position: absolute; top: 150px; left: 94px;}
+#substance .substance_inner .inner_left .txt2::after{content: ''; width: 15px; height: 15px; border-radius: 50%; background: #999; position: absolute; top: 604px; left: 94px;}
+#substance .substance_inner .inner_left .txt3::after{content: ''; width: 15px; height: 15px; border-radius: 50%; background: #999; position: absolute; top: 1054px; left: 94px;}
+#substance .substance_inner .inner_left .txt2{margin-top: 150px; height: 300px; margin-bottom: 0; padding-left: 200px;}
+#substance .substance_inner .inner_left .txt3{margin-top: 150px; height: 300px; margin-bottom: 0; padding-left: 200px;}
+#substance .substance_inner .inner_left::after{content: ''; position: absolute; width: 2px; height: 100%; background: #999;top: 0; left: 100px; animation: extend-line 6s infinite .5s normal;}
+@keyframes extend-line{
+    from{top: -100px; opacity: 1; color: #999;}
+    to{top: 100%; opacity: 0; color: #fff;}
+}
+
+
+#substance .substance_inner .inner_left .txt1 dt{margin-left: -70px; margin-bottom: 50px; font-weight: bold;}
+#substance .substance_inner .inner_left .txt1 dd:nth-of-type(1){font-size: 24px;  font-family : 'Nanum Gothic', sans-serif; font-weight: 800; margin-bottom: 30px;}
+#substance .substance_inner .inner_left .txt1 dd:nth-of-type(2){margin-bottom: 15px; line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+#substance .substance_inner .inner_left .txt1 dd:nth-of-type(3){line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+
+
+#substance .substance_inner .inner_left .txt2 dt{margin-left: -70px; margin-bottom: 50px; font-weight: bold;}
+#substance .substance_inner .inner_left .txt2 dd:nth-of-type(1){font-size: 24px;  font-family : 'Nanum Gothic', sans-serif; font-weight: 800; margin-bottom: 30px;}
+#substance .substance_inner .inner_left .txt2 dd:nth-of-type(2){margin-bottom: 15px; line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+#substance .substance_inner .inner_left .txt2 dd:nth-of-type(3){line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+
+
+
+#substance .substance_inner .inner_left .txt3 dt{margin-left: -70px; margin-bottom: 50px; font-weight: bold;}
+#substance .substance_inner .inner_left .txt3 dd:nth-of-type(1){font-size: 24px;  font-family : 'Nanum Gothic', sans-serif; font-weight: 800; margin-bottom: 30px;}
+#substance .substance_inner .inner_left .txt3 dd:nth-of-type(2){margin-bottom: 15px; line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+#substance .substance_inner .inner_left .txt3 dd:nth-of-type(3){line-height: 1.5em; padding-right: 70px; color: rgb(219, 219, 219);}
+

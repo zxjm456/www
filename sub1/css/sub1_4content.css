@@ -1,0 +1,63 @@
+.sub_menu li.go a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.go a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.go a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.title_area .sub_overview{}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 100%; margin: 0 auto;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.title_area .sub_overview li:nth-of-type(1) a{display: block; color: #333; font-size: 0.938em; text-align: center; padding-bottom: 30px;}
+.title_area .sub_overview li:nth-of-type(1) a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+
+
+#content .title_area .inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: -15px; left:49.5%; transform: rotate(45deg);}
+#content .title_area .inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#content .title_area .inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+.content_area .con1{width: 1200px; margin: 0 auto; overflow: hidden; margin-top: 150px; padding-bottom: 80px;}
+
+.content_area .con1 h3{font-size: 2.313em; color: #0069ab; font-family : 'Nanum Gothic', sans-serif; font-weight: 700; line-height: 1.5em; text-align: center;}
+.content_area .con1  p{margin: 20px 0px 35px; line-height: 1.8em; font-size: 1.250em; font-weight: 500; color: #666; padding-bottom: 20px; text-align: center;}
+.content_area .con1 .r_inner{margin: 20px 0px 35px; line-height: 1.8em; font-size: 1.563em;  font-weight: 500; color: #333; padding-bottom: 20px; text-align: center;}
+
+.content_area .con1  .left td{    font-size: 1.125em; color: #999;}
+.content_area .con1 .right{margin-bottom: 100px; width: 1200px;}
+.content_area .con1 .right .inner{border: 1px solid #ccc; margin-bottom: 100px; box-sizing: border-box;}
+.content_area .con1 .right .inner dl{font-size: 18px;
+color: #333;
+margin: 30px;
+overflow: hidden;}
+.content_area .con1 .right .inner dt{
+    float: left;
+    width: 440px;
+    padding-left: 300px;
+    color: #0069ab;
+}
+.content_area .con1 .right .inner span{padding-left: 20px;}
+.content_area .con1 .right .inner dd{position: relative;}
+.content_area .con1 .right .inner dd::before{    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;}
+
+.content_area .con1  .left{width: 1200px; text-align: left;}
+.content_area .con1  .left table{margin: 0 auto;}
+.content_area .con1  .left .car, .subway{margin: 20px 0 80px 0;}
+.content_area .con1  .left h3{font-size: 1.438em; padding-left: 10px; margin-bottom: 50px;}
+.content_area .con1  .left h3 i{padding-right: 20px; color: #333;}
+.content_area .con1  .left th i{color: #333; padding-right: 5px;}
+.content_area .con1  .left td i{color: #333; padding-right: 5px;}
+.content_area .con1  .left th{ color: #333; font-size: 1.25em; vertical-align: top; line-height: 1.5em; padding-bottom: 20px; padding-right: 20px;}
+.content_area .con1  .left td{font-size: 1.125em; color: #666; line-height: 1.5em; padding-bottom: 20px;}
+#map{width: 1200px; height: 500px; margin: 0 auto; border-radius: 15px; margin-bottom: 80px;}
+.content_area  .go{text-align: center;font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; margin-bottom: 66px;}
+.content_area .deco{width: 44px; height: 3px; display: block; background: #f1871e; position: relative; bottom: 40px; left:48%;}

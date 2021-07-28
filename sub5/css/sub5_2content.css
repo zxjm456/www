@@ -1,0 +1,34 @@
+.sub_menu li.overview a{display: block; background: #0069ab; color: #eee;}
+
+.sub_menu li.overview a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+
+.sub_menu li.overview a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.sub_overview{margin-bottom: -17px;}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 33.3%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+.content_area{}
+.content_area .con_txt{text-align: center; font-family: 'Nanum Gothic', sans-serif; font-size: 1.250em; padding-left: 450px; padding-right: 450px; font-weight: 700; color: #666; line-height: 2em; margin-top: 90px; margin-bottom: 90px;}
+.content_area .con_txt span{color: #0069ab;}
+.content_area .con_sub{padding-left: 440px; font-size: 15px; color: #666; font-family: 'Nanum Gothic', sans-serif; font-weight: 400; position: relative; margin-bottom: 10px;}
+.content_area .con_sub::after{content: ''; width: 15px; height: 1px; position: absolute; top: 10px; left: 420px; background: #666;}
+.content_area .con_sub span{color: #0069ab;}
+.mail_box{width: 1000px; margin: 0 auto; border: 1px solid #ccc; padding: 90px 40px 60px 40px; margin-bottom: 100px; font-family: 'Arial' , sans-serif;}
+.mail_box label {display: block; font-size: 20px; font-weight: 400; margin-bottom: 10px; padding-left: 30px; position: relative;}
+.mail_box label::before{ content: '';width: 8px; height: 8px; background: #0069ab; position: absolute; border-radius: 50%; top: 11px; left: 3px;}
+.mail_box input {width: 100%; box-sizing: border-box; padding: 15px; font-size: 18px; outline: none; border: 1px solid #ccc; border-radius: 5px;}
+.mail_box textarea {width: 100%; box-sizing: border-box; padding: 15px; font-size: 18px; outline: none; height: 150px; border: 1px solid #ccc; border-radius: 5px;}
+.mail_box .help-block {margin-bottom: 50px;}
+.mail_box .help-block ul {position: relative;}
+.mail_box .help-block li {position: absolute; top: -40px; right: 15px; font-size: 16px; color: #0069ab; font-weight: 400;}
+.form-group .btn {font-size: 18px; width: 300px; margin-top: 20px; padding: 10px 30px; background: #333; color: #fff; border: none; border-radius: 5px; position: relative; left: 50%; margin-left: -180px; margin-bottom: 30px; cursor: pointer; transition: all .3s ease-out;}
+.form-group .btn:hover{color: #f0f0f0; background: #0069ab;}
+.alert{position: relative;}
+.alert strong{text-align: center;display: block;font-size: 16px;width: 340px;position: absolute;top: -40px;left: 50%;margin-left: -195px;}
+.alert .close{display: none;}

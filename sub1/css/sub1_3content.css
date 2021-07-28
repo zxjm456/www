@@ -1,0 +1,148 @@
+
+.sub_menu li.businis a{display: block; background: #0069ab; color: #eee;}
+.sub_menu li.businis a::after{display: block; content: ''; border-left: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; left: 100%; top: 0; width: 0; height: 16px;}
+.sub_menu li.businis a::before {display: block; content: ''; border-right: 12px solid #0069ab; border-top: 12px solid transparent; border-bottom: 12px solid transparent; position: absolute; right: 100%; top: 0; width: 0; height: 16px;}
+
+
+.sub_overview{margin-bottom: -17px;}
+
+.title_area .sub_overview ul{overflow: hidden; margin-top: 100px; position: relative;}
+.title_area .sub_overview li{float: left; width: 33.3%;}
+.title_area .sub_overview li a{display: block; color: #666; font-size: 1.063em; text-align: center; padding-bottom: 30px; position: relative; transition: .3s;}
+.title_area .sub_overview li:hover a{color: #333}
+.title_area .sub_overview li a::after{content: ''; display: block; width: 15px; height: 15px; border: 1px solid #666;border-radius: 50%; position: absolute; bottom: 8px; left: 50%; margin-left: -8px; transition: .3s;}
+.title_area .sub_overview li:hover a::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; border: none; background: #333; opacity: .8;}
+
+
+
+
+
+/*sticky 메뉴 */
+#content .title_area .sub_overview.menu_sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0069ab;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky ul{
+    width: 1200px;
+    margin: 0 auto; 
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a{
+    color: #fff;
+    padding: 25px 0;
+    font-size: 1.429em;
+    font-family:  'Nanum Gothic', sans-serif; font-weight: 700;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky a::after{
+    display: none;
+    z-index: 200;
+}
+#content .title_area .sub_overview.menu_sticky .spy{
+    background: #fff;
+    color: #0069ab;
+    z-index: 200;
+}
+/*sticky 메뉴 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content_area .world{width: 1200px; margin: 0 auto;}
+.content_area .world img{margin-top: 60px;}
+.content_area h3{font-size: 2.500em; font-family: 'Nanum Gothic', sans-serif; font-weight: 700; color: #333; text-align: center; margin: 100px 0 100px 0;}
+.content_area p.txt_top{width: 100%;font-size: 1.438em; color: #333; text-align: center; font-weight: bold; line-height: 2em; padding-top: 100px;}
+.content_area p.txt_top span{color: #0069ab;}
+.content_area .group{display: table; width: 1200px; padding-top: 40px; margin: 0 auto; visibility: visible; animation-name: fadeInUp;}
+.content_area .group .col{display: table-cell; position: relative; vertical-align: middle; text-align: center;}
+.content_area .group .col:nth-of-type(1){width: 280px;}
+.content_area .group .col:nth-of-type(3){width: 280px;}
+.content_area .group .left{position: relative; display: inline-block; width: 280px; height: 280px; border-radius: 30%; border: 2px solid #0069ab; background: #fff;}
+.content_area .group .left::after{content: ''; display: block; z-index: -1; opacity: 0; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 130%; height: 130%; background: #468eb8; border-radius: 30%; box-sizing: border-box; animation: diagramPointer 3s infinite ease-out;}
+.content_area .group .left::before{content: ''; position: absolute; top:-30px; right: -30px; left: -30px; bottom: -30px; z-index: -1; background: #d9e8f0; border-radius: 30%;}
+.content_area .group .left .txt{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; color: #0069ab; font-size: 25px; line-height: 25px; font-weight: 500; text-align: center; text-transform: uppercase; font-family: 'Arial';}
+.content_area .group .center{display: inline-block; text-align: center; opacity: 0; animation: circleShow 3s infinite linear;}
+.content_area .group .col:nth-of-type(2)::before{content: ''; position: absolute; left: -15px; top: 50%; width: 15px; height: 25px; transform: translateY(-50%); background: url(../images/content3/right.png) no-repeat center center/100%; opacity: 0;animation: diagramLine 3s infinite linear;}
+.content_area .group .col:nth-of-type(2)::after{content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 2px; transform: translateY(-50%); background: #0069ab; opacity: 1;}
+.content_area .group .center .top{position: relative; width: 240px; height: 240px; border: 2px dashed #f1871e; border-radius: 100%; background: #f5f6f7;}
+.content_area .group .center .top .txt{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; color: #333; font-size: 20px; line-height: 30px; font-weight: 500; text-align: center;}
+.content_area .group .center .bottom{position: relative; width: 240px; height: 240px; margin-top: 50px; border: 2px dashed #f1871e; border-radius: 100%; background: #f5f6f7;}
+.content_area .group .center .bottom .txt{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; color: #333; font-size: 20px; line-height: 30px; font-weight: 500; text-align: center;}
+.content_area .group .right{position: relative; display: inline-block; width: 280px; height: 280px; border-radius: 100%; border: 2px solid #3b88b4; background: #0069ab; opacity: 1;}
+.content_area .group .right::after{content: ''; z-index: -1; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120%;height: 120%; background: #468eb8; border-radius: 100%;  box-sizing: border-box; opacity: 0; animation: diagramPointer 3s infinite ease-out;}
+.content_area .group .right::before{content: ''; z-index: -1; position: absolute; left: -30px; top: -30px; right: -30px; bottom: -30px; background: #d9e8f0; border-radius: 100%;}
+.content_area .group .right .txt{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; color: #fff; font-size: 25px; line-height: 25px; font-weight: 500; text-align: center;}
+/*animation start*/
+@keyframes diagramPointer {
+    0% { opacity:.3 }
+    100% { width:150%; height:150%; opacity:0;}   
+}
+@keyframes diagramLine {
+    0% {left:0; opacity:1;}
+    50% { left:100%; opacity:0;}
+}
+@keyframes circleShow {
+    0% {opacity:0;}
+    50% {opacity:1}
+    0% {opacity:0;}
+}
+/*animation end*/
+
+
+
+/*중국*/
+
+section#china{width: 100%; margin: 0 auto; margin-bottom: 150px;}
+#china .china_inner{width: 1200px; margin: 0 auto; position: relative;}
+
+#china .china_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#china .china_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#china .china_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#china .china_inner .china_bg{position: absolute; left: 50%; border-radius: 0 20px 0 20px;}
+#china .china_inner dl{}
+#china .china_inner dt{color: #0069ab; font-size: 1.5em; font-weight: bold; line-height: 1.8em; border-bottom: 1px solid #0069ab; padding-bottom: 20px;}
+#china .china_inner dd{color: #333; font-size: 1.125em; line-height: 1.8em; margin-bottom: 20px;}
+
+#china .china_inner dd:nth-of-type(1){margin-top: 30px;}
+/*인도네시아*/
+section#indonessia{width: 100%; margin: 0 auto; margin-bottom: 150px;}
+#indonessia .indonessia_inner{width: 1200px; margin: 0 auto; position: relative; padding-bottom: 200px;}
+
+#indonessia .indonessia_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#indonessia .indonessia_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#indonessia .indonessia_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#indonessia .indonessia_inner .indonessia_bg{position: absolute; right: 50%; border-radius: 20px 0 20px 0; z-index: 1;}
+#indonessia .indonessia_inner dl{position: absolute; right: 0; text-align: right;}
+
+#indonessia .indonessia_inner dt{width: 900px; color: #0069ab; font-weight: bold; font-size: 1.5em; line-height: 1.8em; border-bottom: 1px solid #0069ab; padding-bottom: 20px;}
+#indonessia .indonessia_inner dd{color: #333; font-size: 1.125em; line-height: 1.8em; margin-bottom: 20px; }
+#indonessia .indonessia_inner dd:nth-of-type(1){line-height: 1.8em; margin-top: 30px;}
+
+/*미국*/
+section#us{width: 100%; margin: 0 auto; padding-top: 1px;}
+#us .us_inner{width: 1200px; margin: 0 auto; position: relative; padding-bottom: 200px;}
+
+#us .us_inner .deco{width: 15px; height: 15px; display: block; border: 2px solid #8fcaca; position: relative; bottom: 75px; left:49.5%; transform: rotate(45deg);}
+#us .us_inner .deco::before{content: ''; width: 35px; height: 2px; background: #8fcaca; position: absolute; top: -13px; left: 9px; transform: rotate(-45deg);}
+#us .us_inner .deco::after{content: '';  width: 35px; height: 2px; background: #8fcaca; position: absolute; top: 26px; right: 10px; transform: rotate(-45deg);}
+
+#us .us_inner .us_bg{position: absolute; left: 50%; border-radius: 0 20px 0 20px;}
+#us .us_inner dl{}
+#us .us_inner dt{color: #0069ab; font-size: 1.3em; font-weight: bold; line-height: 1.5em; border-bottom: 1px solid #0069ab; padding-bottom: 20px;}
+#us .us_inner dd{color: #333; font-size: 1.125em; line-height: 1.8em; margin-bottom: 20px;}
+#us .us_inner dd:nth-of-type(1){line-height: 1.8em; margin-top: 30px;}
